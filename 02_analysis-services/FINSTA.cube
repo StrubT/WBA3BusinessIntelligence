@@ -1,0 +1,681 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="55d9b72a-cec7-4056-9b41-2bca8664c6e5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Finsta Gruppe1</ID>
+  <Name>Finsta Gruppe1</Name>
+  <CreatedTimestamp>2016-04-29T09:27:31.656667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2016-04-29T09:27:31.656667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="32" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8100" scrolltop="-2521" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="77496" y="40084" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimAufgabenstelle" left="17936" top="5338" logicalid="16" controlid="1" masterid="0" hint1="0" hint2="0" width="4471" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000771100009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dwh_DimAufgabenstelle" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimBFSHaupttyp" left="20" top="9817" logicalid="17" controlid="2" masterid="0" hint1="0" hint2="0" width="4075" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000eb0f0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dwh_DimBFSHaupttyp" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimBezirk" left="6495" top="7678" logicalid="18" controlid="3" masterid="0" hint1="0" hint2="0" width="3096" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000180c0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dwh_DimBezirk" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimGemeinde" left="6543" top="2129" logicalid="19" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dwh_DimGemeinde" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="FactSaldo" left="11991" top="5549" logicalid="20" controlid="5" masterid="0" hint1="0" hint2="0" width="3545" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000d90d0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dwh_FactSaldo" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimBFSTyp" left="682" top="4692" logicalid="21" controlid="6" masterid="0" hint1="0" hint2="0" width="3413" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000550d0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dwh_DimBFSTyp" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimTime" left="12263" top="0" logicalid="22" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dwh_DimTime" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimKonto" left="11991" top="11732" logicalid="23" controlid="8" masterid="0" hint1="0" hint2="0" width="4154" height="5476" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00003a10000064150000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dwh_DimKonto" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="15236" top="6936" logicalid="24" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactSaldo_DimAufgabenstelle]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="5" sourceattachpoint="20" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="17936" y="7335" />
+              <point x="15536" y="7335" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1658" top="7117" logicalid="25" controlid="10" masterid="0" hint1="0" hint2="0" width="1030" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimBFSTyp_DimBFSHaupttyp]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="6" sourceattachpoint="6" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2057" y="9817" />
+              <point x="2057" y="8617" />
+              <point x="2388" y="8617" />
+              <point x="2388" y="7417" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7644" top="4978" logicalid="26" controlid="11" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimGemeinde_DimBezirk]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8043" y="7678" />
+              <point x="8043" y="5278" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3795" top="3403" logicalid="27" controlid="12" masterid="0" hint1="0" hint2="0" width="3048" height="3051" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimGemeinde_DimBFSTyp]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="4" sourceattachpoint="15" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4095" y="6054" />
+              <point x="5319" y="6054" />
+              <point x="5319" y="3703" />
+              <point x="6543" y="3703" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9243" top="3304" logicalid="28" controlid="13" masterid="0" hint1="0" hint2="0" width="3048" height="4331" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactSaldo_DimGemeinde]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="15" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9543" y="3703" />
+              <point x="10767" y="3703" />
+              <point x="10767" y="7335" />
+              <point x="11991" y="7335" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13463" top="8821" logicalid="29" controlid="14" masterid="0" hint1="0" hint2="0" width="1005" height="3411" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactSaldo_DimKonto]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="5" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14068" y="11732" />
+              <point x="14068" y="10427" />
+              <point x="13763" y="10427" />
+              <point x="13763" y="9121" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13364" top="2650" logicalid="30" controlid="15" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactSaldo_DimTime]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="5" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13763" y="3149" />
+              <point x="13763" y="5549" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-8100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2521</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2016-04-29T09:27:52.64Z</LastProcessed>
+  <State>Processed</State>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <Dimensions>
+    <Dimension dwd:design-time-name="32a01b7e-1b25-4ac8-90ea-91cf3e5d71b9">
+      <ID>Dim Konto</ID>
+      <Name>Dim Konto</Name>
+      <DimensionID>Dim Konto</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5940166d-1137-4d81-a3c3-76ed2bc91849">
+          <AttributeID>Konto Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="21fc994f-7418-40f3-bf8c-7022a3d6e106">
+          <AttributeID>Konto Nummer</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="89103b51-0a99-4bcd-b50c-48bccfd1057c">
+          <AttributeID>Kontenklasse Nummer</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dab536f6-f449-46c3-9b84-9d663ba0d437">
+          <AttributeID>Kontengruppe Nummer</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="044dc3d4-b818-48e2-adc5-f209f006e55f">
+          <AttributeID>Kontenklasse Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aa4d4afc-0ead-495b-a225-5957c9821f7a">
+          <AttributeID>Kontenbereich Nummer</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="cf685c05-3566-449d-b38f-49d42b9c488c">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="5ea9b312-22b7-4003-b741-4356d64dd09c">
+      <ID>Dim Aufgabenstelle</ID>
+      <Name>Dim Aufgabenstelle</Name>
+      <DimensionID>Dim Aufgabenstelle</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="413c5b67-49a9-4bdc-bd00-fd5a0749deee">
+          <AttributeID>Aufgabenstelle Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d63caf2d-516f-4ce4-8a1b-3c6239a47ff4">
+          <AttributeID>Aufgabenstelle Nummer</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="93444ad7-900c-4633-90ca-d7934e6ea864">
+          <AttributeID>Aufgabenbereich Nummer</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="edd44335-a17a-4a08-a6d7-d72ac0b3cc11">
+          <AttributeID>Aufgabe Nummer</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="1f607a21-8f6b-465e-ac43-6645976c8733">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="0ad00d85-43ba-4077-a217-7efa9f9fdf32">
+      <ID>Dim Gemeinde</ID>
+      <Name>Dim Gemeinde</Name>
+      <DimensionID>Dim Gemeinde</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e8116d0b-4419-4710-8085-b03abcbe041a">
+          <AttributeID>Gemeinde Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ac61e6d3-35f3-48a6-9a4e-ffd58e3823de">
+          <AttributeID>Bezirk Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="728b048e-c986-4e2c-a954-0cf46d80c366">
+          <AttributeID>BFS Typ Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0a629e45-88a0-4933-9ee2-d794bfd34a6f">
+          <AttributeID>BFS Haupttyp Key</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="58c1ca2e-9d5e-43f9-95ec-2d3df65b01b6">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="f071dba8-962e-42bd-a367-f9e8e44afeb6">
+      <ID>Dim Time</ID>
+      <Name>Dim Time</Name>
+      <DimensionID>Dim Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2b869069-18af-4887-840b-7039c439466f">
+          <AttributeID>Time Key</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="68548fa6-fa70-4d1e-a63c-e34e1e63de2a">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="a337dd07-2b01-4ee4-be98-31c46cfa4218">
+      <ID>Fact Saldo</ID>
+      <Name>Fact Saldo</Name>
+      <CreatedTimestamp>2016-04-29T09:27:31.656667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2016-04-29T09:27:31.656667Z</LastSchemaUpdate>
+      <LastProcessed>2016-04-29T09:27:52.623333Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure dwd:design-time-name="bec3f525-c1a0-4e32-a767-f45def7545a6">
+          <ID>Saldo</ID>
+          <Name>Saldo</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="3b3ff3e4-f14b-4096-b505-864819888bb6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4dffdd44-3d0f-4098-9648-49bb9c5e215a">
+              <TableID>dwh_FactSaldo</TableID>
+              <ColumnID>Saldo</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="eea76726-308d-48be-bfca-d509719d7224">
+          <ID>Fact Saldo Count</ID>
+          <Name>Fact Saldo Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="e518eff5-51c3-40ee-a2ba-3ba2947ef02a">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="e6812fb7-1d5d-41e9-b7cf-44aa4ce323c8">
+              <TableID>dwh_FactSaldo</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>19576540</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="909ca01c-1cbe-465f-9e8f-111c9da2cf53">
+          <CubeDimensionID>Dim Konto</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9e03cf13-3754-49cf-9d22-0ffe4ae9ee51">
+              <AttributeID>Konto Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3fadcc2e-d855-4096-b5c7-3de00d6feb52">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="91300a90-700b-4a48-8f43-cd91b8302009">
+                    <TableID>dwh_FactSaldo</TableID>
+                    <ColumnID>KontoKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="88785fff-9819-4309-88df-c1a6ca04c5a7">
+              <AttributeID>Konto Nummer</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7b3ce7ae-4903-4029-b221-57afc6280090">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="61942b8f-418b-4bfb-9722-0f39d583dd9c">
+                    <TableID>dwh_DimKonto</TableID>
+                    <ColumnID>Konto_x0020_Nummer</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="02a626d0-2d8a-4e9a-9113-0097211daf29">
+              <AttributeID>Kontenklasse Nummer</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="94e58de4-ff11-40ea-b45e-c6cf63412e32">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f8131ac3-48cb-4fec-97f8-fd08d81df7df">
+                    <TableID>dwh_DimKonto</TableID>
+                    <ColumnID>Kontenklasse_x0020_Nummer</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="0d621273-f724-4846-b148-6c495a718739">
+              <AttributeID>Kontengruppe Nummer</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3d416ca4-e31a-4b15-bfd8-7703a0a1c7d3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="62ac745c-abef-49b0-a23d-6fd59b2a4be0">
+                    <TableID>dwh_DimKonto</TableID>
+                    <ColumnID>Kontengruppe_x0020_Nummer</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5d98add4-1fa8-422a-9450-2747560e7193">
+              <AttributeID>Kontenklasse Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6845b498-aca8-4222-a49f-1c9f1f8c265b">
+                  <DataType>WChar</DataType>
+                  <DataSize>512</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="975a2d1a-9e4e-4586-aa84-0cfb29c41fb2">
+                    <TableID>dwh_DimKonto</TableID>
+                    <ColumnID>Kontenklasse_x0020_Name</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="d8969fd0-cd24-409b-a1c3-a5a3254f45d5">
+              <AttributeID>Kontenbereich Nummer</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7979801d-5be7-423e-a250-336b175214b7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="aaa992e2-1a3e-41e7-889c-ae3cf74b682c">
+                    <TableID>dwh_DimKonto</TableID>
+                    <ColumnID>Kontenbereich_x0020_Nummer</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d14a0dc1-0141-4ad5-a559-85b3551bfe3f">
+          <CubeDimensionID>Dim Aufgabenstelle</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ca8efb84-9aa1-4400-b519-806cf3508ec5">
+              <AttributeID>Aufgabenstelle Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b3235170-2061-45fa-b93e-545c6ff06700">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0ad16b15-57c6-45cf-8170-eb18bd20193f">
+                    <TableID>dwh_FactSaldo</TableID>
+                    <ColumnID>AufgabenstelleKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="183d9432-0cb6-4b99-a5a3-6556d8a97b61">
+              <AttributeID>Aufgabenstelle Nummer</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1cb32917-f8a0-4e58-808c-7532bab5327c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="90b445a1-0155-4005-9879-72363bc2b583">
+                    <TableID>dwh_DimAufgabenstelle</TableID>
+                    <ColumnID>Aufgabenstelle_x0020_Nummer</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="48c66aab-7ded-4e83-a75c-e113f8dabfea">
+              <AttributeID>Aufgabenbereich Nummer</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c32e277f-a07f-4565-8a41-72954ee28c73">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f27e941f-1651-4db7-b1d9-2b589c29972e">
+                    <TableID>dwh_DimAufgabenstelle</TableID>
+                    <ColumnID>Aufgabenbereich_x0020_Nummer</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e4f5c3b9-2586-4654-9715-9922d8b40a02">
+              <AttributeID>Aufgabe Nummer</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="714b8172-84d1-4aed-8188-1cefc33f47e3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="33557004-6f0f-481c-b295-b16cd2d8fc57">
+                    <TableID>dwh_DimAufgabenstelle</TableID>
+                    <ColumnID>Aufgabe_x0020_Nummer</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9dcca157-0a09-4a5f-911f-d57291e07d41">
+          <CubeDimensionID>Dim Gemeinde</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="15ddda35-acdc-45b0-8c3e-696846f58e87">
+              <AttributeID>Gemeinde Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="25903f23-5031-49ce-9921-0aea6db4de00">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="48bc8361-973d-4e58-ae58-d6d755e08b43">
+                    <TableID>dwh_FactSaldo</TableID>
+                    <ColumnID>GemeindeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="46540f90-bdd1-4dc3-8381-8a858236d820">
+              <AttributeID>Bezirk Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="727419f6-2622-4222-916a-87f23323fda3">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1fc07a00-19ba-45af-adc0-b35e514ba78a">
+                    <TableID>dwh_DimBezirk</TableID>
+                    <ColumnID>BezirkKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5e7ded23-acc2-47fa-8c00-07bd907fc06a">
+              <AttributeID>BFS Typ Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fda33221-761e-45c3-bbb4-e5367bc1bc7a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="af66fc62-2401-4c82-ad47-02b97653e78e">
+                    <TableID>dwh_DimBFSTyp</TableID>
+                    <ColumnID>BFSTypKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="12cae2f3-2a60-415f-ab2d-7a9870de3b90">
+              <AttributeID>BFS Haupttyp Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e2857054-c64f-4e12-80b2-0a185a50d96e">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7d5d5d4a-6f79-4da6-86de-d9b90eb2d5dc">
+                    <TableID>dwh_DimBFSHaupttyp</TableID>
+                    <ColumnID>BFSHaupttypKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="070b15ab-60dd-4dab-b452-0f8b6d415738">
+          <CubeDimensionID>Dim Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="872048e4-a250-4aae-8d58-af52fa5cd22a">
+              <AttributeID>Time Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ee303d91-c66c-45ca-9bff-b0f84aeab1c1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a5c91a48-20a0-4b7b-852a-52a20691001e">
+                    <TableID>dwh_FactSaldo</TableID>
+                    <ColumnID>TimeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="d3fd60a8-0227-479e-9514-2b8e0d47ad5b">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5d419037-37bc-4f8f-9bb3-10c9306bee1b" />
+      </ProactiveCaching>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="5dabdfcd-2d5c-489e-8bea-54d4b89e6d5f">
+    <DataSourceViewID>Finsta Gruppe1</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="781f8660-46d4-4980-ba93-5ecd61fc6c71">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>2016-04-29T09:27:31.673333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2016-04-29T09:27:31.673333Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Finanzertrag]
+ AS ([Measures].[Saldo],[Dim Konto].[Kontenbereich Nummer].&amp;[4])-([Measures].[Saldo],[Dim Konto].[Kontengruppe Nummer].&amp;[47])-([Measures].[Saldo],[Dim Konto].[Kontengruppe Nummer].&amp;[48])-([Measures].[Saldo],[Dim Konto].[Kontengruppe Nummer].&amp;[49]), 
+VISIBLE = 1  ;  
+CREATE MEMBER CURRENTCUBE.[Measures].[Selbstfinanzierung]
+ AS ([Measures].[Saldo],[Dim Konto].[Kontenbereich Nummer].&amp;[3])-([Measures].[Saldo],[Dim Konto].[Kontenbereich Nummer].&amp;[4])+([Measures].[Saldo],[Dim Konto].[Konto Nummer].&amp;[331])+([Measures].[Saldo],[Dim Konto].[Konto Nummer].&amp;[332])+([Measures].[Saldo],[Dim Konto].[Konto Nummer].&amp;[333])+([Measures].[Saldo],[Dim Konto].[Kontengruppe Nummer].&amp;[38])-([Measures].[Saldo],[Dim Konto].[Kontengruppe Nummer].&amp;[48]), 
+VISIBLE = 1;  
+CREATE MEMBER CURRENTCUBE.[Measures].[Nettoinvestitionen]
+ AS ([Measures].[Saldo],[Dim Konto].[Konto Nummer].&amp;[690])-([Measures].[Saldo],[Dim Konto].[Konto Nummer].&amp;[590]), 
+VISIBLE = 1;  
+CREATE MEMBER CURRENTCUBE.[Measures].[Selbstfinanzierungsgrad]
+ AS [Measures].[Selbstfinanzierung]/[Measures].[Nettoinvestitionen], 
+VISIBLE = 1; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Selbstfinanzierungsanteil]
+ AS [Measures].[Selbstfinanzierung]/[Measures].[Finanzertrag], 
+VISIBLE = 1  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <ProactiveCaching dwd:design-time-name="73f672d3-0178-4f05-923a-9fcebf52409c">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b77d9d99-acdc-42ab-ac68-2bd9ab89ca09" />
+  </ProactiveCaching>
+</Cube>

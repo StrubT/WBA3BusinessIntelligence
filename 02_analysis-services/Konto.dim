@@ -1,0 +1,279 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fb3591e8-3038-43e2-a4e2-7113bba1c0ba" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Konto</ID>
+  <Name>Konto</Name>
+  <CreatedTimestamp>2016-04-29T09:27:31.626667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2016-04-29T09:27:31.626667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4478" scrolltop="-7242" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="13150" y="16484" backcolor="16185078" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimKonto" left="-3763" top="-6403" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="11113" height="11403" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000692b00008b2c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dwh_DimKonto" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4478</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7242</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-3763</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-6403</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2016-04-29T09:27:40.096667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e9741368-6114-41ef-baa4-bc0911199306">
+    <DataSourceViewID>Finsta Gruppe1</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="f480999a-8e0b-484f-b37c-f8835aa4e0ef">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="180064c7-9443-41b7-be23-a0be24d4b8aa">
+      <ID>Konto Key</ID>
+      <Name>Konto Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e3b77768-e3b2-4644-a47c-890799a8f014">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="33fc6dd2-6a9e-4ca1-b17f-44b2e558e488">
+            <TableID>dwh_DimKonto</TableID>
+            <ColumnID>KontoKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="5264eec3-7445-46bf-a266-0c3e7fac6738">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5f507f7c-8aa2-4d72-98b4-8ed145bd678f">
+          <TableID>dwh_DimKonto</TableID>
+          <ColumnID>KontoKey</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4d0f053e-c578-4923-b32b-d9cb9b944a9e">
+          <AttributeID>Konto Nummer</AttributeID>
+          <Name>Konto Nummer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7dbbcbca-28da-4710-af6d-922c3f12beca">
+          <AttributeID>Kontenklasse Nummer</AttributeID>
+          <Name>Kontenklasse Nummer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0f279d7b-d15d-4c24-9a7c-2b8e6b887bb1">
+          <AttributeID>Kontengruppe Nummer</AttributeID>
+          <Name>Kontengruppe Nummer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9a0bdf0b-0253-43a9-9b25-a7ef202ca4cf">
+          <AttributeID>Kontenklasse Name</AttributeID>
+          <Name>Kontenklasse Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="198df618-42f1-4782-a2cf-e2b6a458ec0c">
+          <AttributeID>Kontenbereich Nummer</AttributeID>
+          <Name>Kontenbereich Nummer</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="74451f66-6ae5-46e4-aa49-5993a2f29185">
+      <ID>Konto Nummer</ID>
+      <Name>Konto Nummer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6546d33d-5b7c-4a0e-bee3-8347b07a8974">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="387a0e8c-71d0-41e0-93f5-ed685116a37f">
+            <TableID>dwh_DimKonto</TableID>
+            <ColumnID>Konto_x0020_Nummer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="46dfb4e6-693f-4cd8-ab04-612092c5993a">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3fd92480-329b-4e07-8ba2-fe5bb7d33276">
+          <TableID>dwh_DimKonto</TableID>
+          <ColumnID>Konto_x0020_Nummer</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="73cde141-186b-4d7a-98de-9a82d0b4ca41">
+      <ID>Kontenklasse Nummer</ID>
+      <Name>Kontenklasse Nummer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="02f29890-b124-4719-b058-6cdde8e2d925">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8649bf7e-fda5-46de-8e6c-697c6f2b89b9">
+            <TableID>dwh_DimKonto</TableID>
+            <ColumnID>Kontenklasse_x0020_Nummer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c919cbd6-8a84-4117-b1de-88d05e26b5ba">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="653cfe02-dc21-4e7f-aafd-2f38feace9e8">
+          <TableID>dwh_DimKonto</TableID>
+          <ColumnID>Kontenklasse_x0020_Nummer</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e832678f-28d0-463d-ac08-85ee5ea6f997">
+      <ID>Kontengruppe Nummer</ID>
+      <Name>Kontengruppe Nummer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="09d121ed-93ca-4e7b-93f1-7532233a27c9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a5f35666-bd00-4506-8421-7dd44464a94e">
+            <TableID>dwh_DimKonto</TableID>
+            <ColumnID>Kontengruppe_x0020_Nummer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="59a01177-f0d6-4096-83ab-500b2ce74351">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a4d89edc-7031-4aab-8c32-9f55ea9a83a9">
+          <TableID>dwh_DimKonto</TableID>
+          <ColumnID>Kontengruppe_x0020_Nummer</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="33a4d564-e305-4426-885b-340eb0ea2f28">
+      <ID>Kontenklasse Name</ID>
+      <Name>Kontenklasse Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6df119fe-fae5-4bd1-99bb-f878c25c8158">
+          <DataType>WChar</DataType>
+          <DataSize>512</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="427dfa88-8da5-43ea-9f36-42e485cd4f3e">
+            <TableID>dwh_DimKonto</TableID>
+            <ColumnID>Kontenklasse_x0020_Name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="fa9006ef-a396-4b65-857c-1f3fb65c16a0">
+        <DataType>WChar</DataType>
+        <DataSize>512</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2942085b-5eda-4a9f-95f6-d7c3ac046ff1">
+          <TableID>dwh_DimKonto</TableID>
+          <ColumnID>Kontenklasse_x0020_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3b105516-4a56-4295-a0ad-79812335ab40">
+      <ID>Kontenbereich Nummer</ID>
+      <Name>Kontenbereich Nummer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="952e1955-5c8e-4050-b9aa-1e571357f63f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c6e9a1d4-35b4-4a88-82c7-94fde8f09149">
+            <TableID>dwh_DimKonto</TableID>
+            <ColumnID>Kontenbereich_x0020_Nummer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3fe94bbf-95c0-4399-91f8-d74c45501aea">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f4df3311-7256-4474-bcd2-ce6933487e37">
+          <TableID>dwh_DimKonto</TableID>
+          <ColumnID>Kontenbereich_x0020_Nummer</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="eb32ca4c-7d19-450d-a162-20dfe19cd930">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="3e4ade78-2148-42aa-a47a-46296adb9cf8">
+          <ID>Kontenbereich Nummer</ID>
+          <Name>Kontenbereich Nummer</Name>
+          <SourceAttributeID>Kontenbereich Nummer</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="20dba605-99f2-494c-9699-8c2b253eeda6">
+          <ID>Kontenklasse Nummer</ID>
+          <Name>Kontenklasse Nummer</Name>
+          <SourceAttributeID>Kontenklasse Nummer</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="21a6acaa-64af-4e8a-aa3d-669265748fe0">
+          <ID>Kontengruppe Nummer</ID>
+          <Name>Kontengruppe Nummer</Name>
+          <SourceAttributeID>Kontengruppe Nummer</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="30fa7ef0-2d5b-471d-adeb-8dc88af0f5db">
+          <ID>Konto Key</ID>
+          <Name>Konto Key</Name>
+          <SourceAttributeID>Konto Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching dwd:design-time-name="2bd38aec-c050-4a16-9398-595f4023753e">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5bd978b2-e23f-4199-b145-46c64c1e64fe" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,196 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="078b2a32-2f83-4458-9f58-bef4dfc1c2c6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Gemeinde</ID>
+  <Name>Gemeinde</Name>
+  <CreatedTimestamp>2016-04-29T09:27:31.626667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2016-04-29T09:27:31.626667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1545</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3022</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-1568</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-1936</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2016-04-29T09:27:37.283333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6b257ad5-35fb-4583-b227-eb09ef5de9ee">
+    <DataSourceViewID>Finsta Gruppe1</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="a5e1ed37-48ed-42a1-a2d6-6d6fc3e5c651">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="ae065fe0-9659-4072-a2c6-8768d2dc754a">
+      <ID>Gemeinde Key</ID>
+      <Name>Gemeinde Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="01b47d33-361a-4217-b7a5-0e4ad42ef45e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="71e24037-8266-4487-97de-d7a68539367c">
+            <TableID>dwh_DimGemeinde</TableID>
+            <ColumnID>GemeindeKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3165ef8c-8bb1-4601-821d-657a12858ae3">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="db1fd615-06e0-41db-93c4-97bcc36556bd">
+          <TableID>dwh_DimGemeinde</TableID>
+          <ColumnID>GemeindeKey</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f7f328ed-9a42-4ea8-be17-fe80903ae866">
+          <AttributeID>Bezirk Key</AttributeID>
+          <Name>Bezirk Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f8380fd6-5ab8-49f3-b4e7-bf9b51a12596">
+          <AttributeID>BFS Typ Key</AttributeID>
+          <Name>BFS Typ Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c78dcf97-8d66-4ca5-952b-ff3a19455431">
+      <ID>Bezirk Key</ID>
+      <Name>Bezirk Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9ba64f8c-367d-42a9-b67a-f6bc5f98c339">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="698e54e1-a242-4b2c-88f4-0f046e162e51">
+            <TableID>dwh_DimBezirk</TableID>
+            <ColumnID>BezirkKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="cf5966e7-dd10-452e-8e85-621fdcc6045d">
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3cc8d220-2660-4dd2-b26a-6667ddfd4f0a">
+          <TableID>dwh_DimBezirk</TableID>
+          <ColumnID>BezirkKey</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0f57c379-cd1a-4a9b-8206-0108e9b123aa">
+      <ID>BFS Typ Key</ID>
+      <Name>BFS Typ Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="37ff50c5-6da2-427f-954a-dd89b9436fa7">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d70681ce-c793-4115-9f58-b72a78c091c3">
+            <TableID>dwh_DimBFSTyp</TableID>
+            <ColumnID>BFSTypKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f91df122-6035-4c69-a7ea-b489957a9583">
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a49c5e69-db35-438a-a935-e84376770d28">
+          <TableID>dwh_DimBFSTyp</TableID>
+          <ColumnID>BFSTypKey</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4be0b3a0-5661-422b-b8be-28a6d2d6a2be">
+          <AttributeID>BFS Haupttyp Key</AttributeID>
+          <Name>BFS Haupttyp Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="851cd764-080c-4086-a88b-4c43b03c5c78">
+      <ID>BFS Haupttyp Key</ID>
+      <Name>BFS Haupttyp Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dd6167b6-df39-45b9-94c9-60254cd1aed2">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b32f55d-deeb-4606-9786-914ec9475b55">
+            <TableID>dwh_DimBFSHaupttyp</TableID>
+            <ColumnID>BFSHaupttypKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3a09d884-bd1d-48eb-9d86-3c783b3874ad">
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="16130e1e-52c3-487b-81a0-5eaba5e65e6f">
+          <TableID>dwh_DimBFSHaupttyp</TableID>
+          <ColumnID>BFSHaupttypKey</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="005e91bd-9c0b-44fc-ab86-4bcad0531efe">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="63ce4ae4-4f4e-4f85-b98c-ba35cc6c9194">
+          <ID>Gemeinde Key</ID>
+          <Name>Gemeinde Key</Name>
+          <SourceAttributeID>Gemeinde Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching dwd:design-time-name="c7624474-951d-48e5-a899-8b85602f47ee">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="8b581936-9d36-460e-9dba-59005c14e034" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

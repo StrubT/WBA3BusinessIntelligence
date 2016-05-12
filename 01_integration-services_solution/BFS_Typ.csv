@@ -1,0 +1,24 @@
+BFS Typ;BFS Typ Name;BFS Haupttyp
+0;Unbekannt;0
+1;Grosszentren (CG);1
+2;Mittelzentren (CM) ;1
+3;Kleinzentren (CP) ;1
+4;Peripheriezentren (CPE) ;6
+5;Einkommensstarke Gemeinden (RE) ;3
+6;Touristische Gemeinden (TT) ;5
+7;Semitouristische Gemeinden (TST);5
+8;Gemeinden mit Heimen und Institutionen (THI) ;6
+9;Arbeitsplatzgemeinden metropolitaner Regionen (ME) ;2
+10;Suburbane Gemeinden metropolitaner Regionen (MS) ;2
+11;Periurbane Gemeinden metropolitaner Regionen (MP) ;4
+12;Arbeitsplatzgemeinden nicht-metropolitaner Regionen (NE) ;2
+13;Suburbane Gemeinden nicht-metropolitaner Regionen (NS) ;2
+14;Periurbane Gemeinden nicht-metropolitaner Regionen (NP) ;4
+15;Wegpendlergemeinden mit hoher Zuwanderung (NAL) ;7
+16;Wegpendlergemeinden mit geringer Zuwanderung (NAU);7
+17;Industriell-tertiäre Gemeinden (SIT) ;6
+18;Industrielle Gemeinden (SI) ;6
+19;Agrar-industrielle Gemeinden (SAI) ;8
+20;Agrar-tertiäre Gemeinden (SAT) ;8
+21;Agrarische Gemeinden (SA) ;9
+22;Gemeinden mit starkem Bevölkerungsrückgang (SR);9

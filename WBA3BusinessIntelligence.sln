@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "01_integration-services", "01_integration-services\01_integration-services.dtproj", "{071A86ED-0842-4DFA-BDED-269023BE66A8}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "01_integration-services_solution", "01_integration-services_solution\01_integration-services_solution.dtproj", "{6DF7A498-3CDE-40FD-B5EC-AF709A56C5F3}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "02_analysis-services", "02_analysis-services\02_analysis-services.dwproj", "{CFA9D9C6-2B9D-4782-BF93-C7750AE437C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{071A86ED-0842-4DFA-BDED-269023BE66A8}.Development|Default.ActiveCfg = Development
+		{071A86ED-0842-4DFA-BDED-269023BE66A8}.Development|Default.Build.0 = Development
+		{6DF7A498-3CDE-40FD-B5EC-AF709A56C5F3}.Development|Default.ActiveCfg = Development
+		{6DF7A498-3CDE-40FD-B5EC-AF709A56C5F3}.Development|Default.Build.0 = Development
+		{CFA9D9C6-2B9D-4782-BF93-C7750AE437C4}.Development|Default.ActiveCfg = Development
+		{CFA9D9C6-2B9D-4782-BF93-C7750AE437C4}.Development|Default.Build.0 = Development
+		{CFA9D9C6-2B9D-4782-BF93-C7750AE437C4}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

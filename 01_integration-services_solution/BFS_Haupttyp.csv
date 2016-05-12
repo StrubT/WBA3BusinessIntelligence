@@ -1,0 +1,11 @@
+BFS Haupttyp;BFS Haupttyp Name
+0;Unbekannt
+1;Zentren (CEN) 
+2;Suburbane Gemeinden (SUB) 
+3;Einkommensstarke Gemeinden (RE) 
+4;Periurbane Gemeinden (PERI) 
+5;Touristische Gemeinden (TOUR) 
+6;Industrielle und tertiäre Gemeinden (IND) 
+7;Ländliche Pendlergemeinden (PEND) 
+8;Agrar-gemischte Gemeinden (MIX) 
+9;Agrarische Gemeinden (AGR) 

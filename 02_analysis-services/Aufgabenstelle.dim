@@ -1,0 +1,228 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="38aa529c-d13a-4d04-a455-8d21fbcf872f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Aufgabenstelle</ID>
+  <Name>Aufgabenstelle</Name>
+  <CreatedTimestamp>2016-04-29T09:27:31.626667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2016-04-29T09:27:31.626667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4320" scrolltop="-6245" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="24765" y="40084" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimAufgabenstelle" left="-3102" top="-4683" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4471" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000771100009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dwh_DimAufgabenstelle" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4320</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6245</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-3102</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-4683</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2016-04-29T09:27:39.86Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="bd0633cc-4278-45e7-a479-782bf6175597">
+    <DataSourceViewID>Finsta Gruppe1</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="4439514a-4446-49af-8f81-952ccc39d60f">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="a79fd91c-b96f-43b0-a85d-d73ce3414515">
+      <ID>Aufgabenstelle Key</ID>
+      <Name>Aufgabenstelle Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9db6680c-8776-496e-9f33-cc926c5aa29c">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a0284355-9baa-4ee1-a606-e4f3cf5f4f33">
+            <TableID>dwh_DimAufgabenstelle</TableID>
+            <ColumnID>AufgabenstelleKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="521cb48d-4983-4e74-a1d9-995ae72bb6bf">
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4f2e60fa-ca0e-45c1-b014-45526420162b">
+          <TableID>dwh_DimAufgabenstelle</TableID>
+          <ColumnID>AufgabenstelleKey</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4a614c63-7657-4148-aaed-573a416dc2bc">
+          <AttributeID>Aufgabenstelle Nummer</AttributeID>
+          <Name>Aufgabenstelle Nummer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="43068dce-33e9-4eae-a79d-f46b7aaf63c4">
+          <AttributeID>Aufgabenbereich Nummer</AttributeID>
+          <Name>Aufgabenbereich Nummer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b4e62f0d-faac-45fa-9773-121efb331109">
+          <AttributeID>Aufgabe Nummer</AttributeID>
+          <Name>Aufgabe Nummer</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a4c73d4a-e4fe-4a7b-8423-2d2cd407c336">
+      <ID>Aufgabenstelle Nummer</ID>
+      <Name>Aufgabenstelle Nummer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="99e0bdca-8a00-41ac-bf5b-2e1ed1ea9f9d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="734d5463-341f-4dfb-b2f1-d1a6f977077f">
+            <TableID>dwh_DimAufgabenstelle</TableID>
+            <ColumnID>Aufgabenstelle_x0020_Nummer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="12630459-4709-4f8f-b353-1c82443d0355">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9d56f303-0632-4d03-87f1-50e7d537516e">
+          <TableID>dwh_DimAufgabenstelle</TableID>
+          <ColumnID>Aufgabenstelle_x0020_Nummer</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="19ad3d9b-5452-4511-b65d-00a4c3d5b1e4">
+      <ID>Aufgabenbereich Nummer</ID>
+      <Name>Aufgabenbereich Nummer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="71487247-ca3c-43f0-827b-073f7d214708">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ad99ea2-2c64-45bf-8f05-c5a68dc47630">
+            <TableID>dwh_DimAufgabenstelle</TableID>
+            <ColumnID>Aufgabenbereich_x0020_Nummer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2a53f902-7d95-4fc9-9b47-6a0b2303f49d">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9d24d0b7-49f0-4c77-a22c-3db9186c369b">
+          <TableID>dwh_DimAufgabenstelle</TableID>
+          <ColumnID>Aufgabenbereich_x0020_Nummer</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4aeb8b30-034b-49ab-97d2-4b07f2bb35c5">
+      <ID>Aufgabe Nummer</ID>
+      <Name>Aufgabe Nummer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d794ccf9-faf6-4473-b550-ae5c1f3b9a90">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="52090b1a-1cbf-4c04-9d96-0845e2d07bf2">
+            <TableID>dwh_DimAufgabenstelle</TableID>
+            <ColumnID>Aufgabe_x0020_Nummer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f763c6ca-c987-4d51-8a35-9dfee62eabae">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="604578da-a97a-4d3f-861c-b7e3db10e986">
+          <TableID>dwh_DimAufgabenstelle</TableID>
+          <ColumnID>Aufgabe_x0020_Nummer</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="29dbf493-57f8-4ee9-a0ff-827a978534ec">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="518c0fa2-b5f6-47da-85fb-037a08520af8">
+          <ID>Aufgabenbereich Nummer</ID>
+          <Name>Aufgabenbereich Nummer</Name>
+          <SourceAttributeID>Aufgabenbereich Nummer</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e906984f-6712-48ad-b75a-ff0b4b0c61e5">
+          <ID>Aufgabenstelle Nummer</ID>
+          <Name>Aufgabenstelle Nummer</Name>
+          <SourceAttributeID>Aufgabenstelle Nummer</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c7be3afb-9411-447d-8d98-6ab13f7e3e6c">
+          <ID>Aufgabe Nummer</ID>
+          <Name>Aufgabe Nummer</Name>
+          <SourceAttributeID>Aufgabe Nummer</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="981ca0d6-0f85-4ff8-9e4e-16afd2ef3ec1">
+          <ID>Aufgabenstelle Key</ID>
+          <Name>Aufgabenstelle Key</Name>
+          <SourceAttributeID>Aufgabenstelle Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching dwd:design-time-name="141a4b2e-66ca-4532-8e32-627599fd3c2f">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4b7f0385-762c-4da5-8640-75ac4549272b" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
