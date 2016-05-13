@@ -116,6 +116,20 @@ FROM            geo.Gemeindegrenzen</CommandText>
         </Field>
       </Fields>
     </DataSet>
+    <DataSet Name="MaxYear">
+      <Query>
+        <DataSourceName>FinstaDW</DataSourceName>
+        <CommandText>SELECT        MAX(DimTime.Year) AS Year
+FROM            FactSaldo INNER JOIN
+                         DimTime ON FactSaldo.TimeKey = DimTime.TimeKey</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>
@@ -379,6 +393,7 @@ FROM            geo.Gemeindegrenzen</CommandText>
                 <Caption />
               </MapColorScaleTitle>
               <ColorBarBorderColor>Gray</ColorBarBorderColor>
+              <LabelFormat>#,##0.##</LabelFormat>
               <HideEndLabels>false</HideEndLabels>
               <NoDataText>No data</NoDataText>
               <Position>LeftBottom</Position>
@@ -442,6 +457,11 @@ FROM            geo.Gemeindegrenzen</CommandText>
   <ReportParameters>
     <ReportParameter Name="TimeYear">
       <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>[Time].[Year].&amp;[2014-12-31T00:00:00]</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Year</Prompt>
       <ValidValues>
         <DataSetReference>
