@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1dfe5107-5430-43a5-8554-076789174651" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>FINSTA</ID>
   <Name>FINSTA</Name>
   <CreatedTimestamp>2016-05-10T06:08:15.336667Z</CreatedTimestamp>
@@ -525,168 +525,168 @@
   <Language>1033</Language>
   <Collation>Latin1_General_CI_AS</Collation>
   <Dimensions>
-    <Dimension>
+    <Dimension dwd:design-time-name="0e1d1918-8abe-4c5c-8f4c-f09a24337234">
       <ID>Dim Aufgabenstelle</ID>
       <Name>Aufgabenstelle</Name>
       <DimensionID>Dim Aufgabenstelle</DimensionID>
       <Attributes>
-        <Attribute>
+        <Attribute dwd:design-time-name="c645c758-4547-45a9-a354-cbe8f7d9919c">
           <AttributeID>Aufgabenstelle Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="0de379ab-9afe-4cef-aabc-2a3db272a1df">
           <AttributeID>Aufgabe Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="81292404-9038-48bc-bbf8-8bba985e8817">
           <AttributeID>Aufgabenbereich Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="fc609535-febe-4b27-b8c1-91fe7b363960">
           <AttributeID>Aufgabe Nummer</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="de9fbab4-e59f-4f76-956b-bab9b6b2bd1e">
           <AttributeID>Aufgabenstelle Nummer</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="34bc868f-3695-453c-a22c-a6d66bee9a77">
           <AttributeID>Aufgabenbereich Nummer</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="f192555b-e603-4132-8560-85bceced17fd">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="4c54e1f3-cfed-4932-827e-304fcef09eab">
           <HierarchyID>Hierarchy 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension>
+    <Dimension dwd:design-time-name="cc63ca97-a0d1-4bad-8dcd-2e9ad9984592">
       <ID>Dim Konto</ID>
       <Name>Konto</Name>
       <DimensionID>Dim Konto</DimensionID>
       <Attributes>
-        <Attribute>
+        <Attribute dwd:design-time-name="6e0f8958-185e-4a25-a605-177a7160e817">
           <AttributeID>Konto Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="9c601c35-ae2e-49db-9d38-59b927818ed5">
           <AttributeID>Kontenbereich Name</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="5a519ed6-46ec-4530-b16d-d862bb5bf3d3">
           <AttributeID>Kontenbereich Nummer</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="ff96a3e0-1cc1-4617-9de6-cda5f88dcd49">
           <AttributeID>Kontengruppe Name</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="d879613c-7bfa-45dd-acaa-586897a28847">
           <AttributeID>Kontengruppe Nummer</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="b098b52b-344d-4d15-bac6-df7d042b1ec9">
           <AttributeID>Kontenklasse Name</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="f4f3f7da-2dbe-43a9-9be8-d7da25a84bcc">
           <AttributeID>Kontenklasse Nummer</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="f01657cf-c5da-4e5e-a41a-0fef428d6353">
           <AttributeID>Konto Name</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="78d793da-0416-457e-8fec-69a0d79238e9">
           <AttributeID>Konto Nummer</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="adf87147-ea65-49ea-bcf2-c325f134bb0d">
           <AttributeID>Konto Laufnummer</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="ba860136-1966-4d28-a591-c6f2d2dfb728">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="49710852-f50e-4d09-a765-07b4592a93ec">
           <HierarchyID>Hierarchy 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension>
+    <Dimension dwd:design-time-name="463fcb88-44c2-437d-82da-9157bfd8473e">
       <ID>Dim Gemeinde</ID>
       <Name>Gemeinde</Name>
       <DimensionID>Dim Gemeinde</DimensionID>
       <Attributes>
-        <Attribute>
+        <Attribute dwd:design-time-name="7e8e2ce7-4620-465b-a053-945e048bf692">
           <AttributeID>Gemeinde Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="ac77b424-b6d8-48a1-9187-a831b4daa5f1">
           <AttributeID>Bezirk Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="74734b34-70f4-4824-b666-f5ab2c87b2d7">
           <AttributeID>BFS Typ Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="7621b700-c563-4d8c-af91-36f962a4b178">
           <AttributeID>BFS Haupttyp Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="b606dd4a-30f2-4882-aecb-57dc1c308551">
           <AttributeID>Agglomerationstyp Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="ab70b173-d021-4d01-b9db-fbb3341964c8">
           <AttributeID>Agglomeration Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="1a8d2682-6d10-47b7-a447-5bc0806acc4c">
           <AttributeID>Gemeindegroesse Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="2ad699ab-f9c4-4702-a5bf-e8b05b6e5c0b">
           <AttributeID>Verwaltungskreis Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="58479632-e287-4d56-9935-894d8fad6272">
           <AttributeID>BFS- Nr</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="b4b626a7-98e0-490f-be01-96ccf0ad8a85">
           <AttributeID>Kanton</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="8c57a3ea-ac57-4590-8d39-3d211ff537dc">
           <AttributeID>Land</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="bd579db1-68e3-4972-b7bd-db451720856a">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="f33e6894-c74e-4592-abcc-9a14380eb6f1">
           <HierarchyID>Hierarchy 1</HierarchyID>
         </Hierarchy>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="2ea425cb-076e-49d8-9da3-4c51fc9bb029">
           <HierarchyID>Hierarchy 2</HierarchyID>
         </Hierarchy>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="fd466ccb-3bbe-4ebc-90be-48d5a0a7848a">
           <HierarchyID>Hierarchy 3</HierarchyID>
         </Hierarchy>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="e4c1a0c7-c32f-4e36-a60e-fbe53d3fa66b">
           <HierarchyID>Hierarchy 4</HierarchyID>
         </Hierarchy>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="5c1f7342-7377-421a-91bb-b0a229701bd8">
           <HierarchyID>Hierarchy 5</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension>
+    <Dimension dwd:design-time-name="6f2bdbc8-8018-4d99-b110-311951810bc1">
       <ID>Dim Time</ID>
       <Name>Time</Name>
       <DimensionID>Dim Time</DimensionID>
       <Attributes>
-        <Attribute>
+        <Attribute dwd:design-time-name="b763331e-e5b4-458a-87a2-f5bee7d8c2a2">
           <AttributeID>Time Key</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="6f24de08-f336-42ca-9e14-790135089662">
           <AttributeID>Date</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="19832f54-5f03-4643-8c5e-2ffff6d0227b">
           <AttributeID>Year</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="cf300e85-41aa-4a06-b3ca-288c20f0a1a8">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup>
+    <MeasureGroup dwd:design-time-name="0b8e8c3b-a3fe-4467-aa84-32d76aaf96b4">
       <ID>Fact Saldo</ID>
       <Name>Fact Saldo</Name>
       <CreatedTimestamp>2016-05-10T06:08:15.353333Z</CreatedTimestamp>
@@ -694,28 +694,28 @@
       <LastProcessed>2016-05-10T06:08:28.023333Z</LastProcessed>
       <State>Processed</State>
       <Measures>
-        <Measure>
+        <Measure dwd:design-time-name="9c75f214-58d3-439f-a345-4b9bf843ce3a">
           <ID>Saldo</ID>
           <Name>Saldo</Name>
           <DataType>Double</DataType>
-          <Source>
+          <Source dwd:design-time-name="2e40471e-4c24-4996-96f3-f5fafe12f635">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="61455af4-11dd-494a-b8a9-2f5a245470c0">
               <TableID>dbo_FactSaldo</TableID>
               <ColumnID>Saldo</ColumnID>
             </Source>
           </Source>
           <FormatString>#,#.00</FormatString>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="8ea2a410-b33e-47f8-9191-4468bffc8dfe">
           <ID>Fact Saldo Count</ID>
           <Name>Fact Saldo Count</Name>
           <AggregateFunction>Count</AggregateFunction>
           <DataType>Integer</DataType>
-          <Source>
+          <Source dwd:design-time-name="4a4cabf1-eeb5-4ab9-8152-fba0718a4d23">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding">
+            <Source xsi:type="RowBinding" dwd:design-time-name="fbf5fad7-117d-4728-a6fe-e4ba658795e6">
               <TableID>dbo_FactSaldo</TableID>
             </Source>
           </Source>
@@ -725,16 +725,16 @@
       <EstimatedSize>19941579</EstimatedSize>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9d901815-8df5-47d8-b99a-5e1c47aaf6f1">
           <CubeDimensionID>Dim Aufgabenstelle</CubeDimensionID>
           <Attributes>
-            <Attribute>
+            <Attribute dwd:design-time-name="0480ae99-9820-4954-a5fe-9141aa2fcc9f">
               <AttributeID>Aufgabenstelle Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="7fe0d668-a4f5-4b84-8580-9b7348a2c014">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ed879d5c-e2ed-4c99-ae43-fd9471dc7766">
                     <TableID>dbo_FactSaldo</TableID>
                     <ColumnID>AufgabenstelleKey</ColumnID>
                   </Source>
@@ -742,62 +742,62 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="fbcd373e-87de-459b-9235-919f4e133583">
               <AttributeID>Aufgabe Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="cde46207-ed56-4dda-91ec-54307459f150">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a9a36de9-2ebc-4ca9-9530-d015337dc6f9">
                     <TableID>dbo_DimAufgabe</TableID>
                     <ColumnID>AufgabeKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="60d4d27e-35ab-4ee1-a05e-aea80070cbfa">
               <AttributeID>Aufgabenbereich Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="05dc5356-f0fd-463c-938e-6dc24e32be99">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="50bd759b-ba95-4acf-8e0e-ae8308a56136">
                     <TableID>dbo_DimAufgabenbereich</TableID>
                     <ColumnID>AufgabenbereichKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="2f131b78-9304-45c1-bf4a-d10892c73946">
               <AttributeID>Aufgabe Nummer</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="2f18047d-e2a5-410d-8c7a-cc80fcb2e590">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dd033c7c-b2a2-49d2-9001-78b05ee389bf">
                     <TableID>dbo_DimAufgabe</TableID>
                     <ColumnID>Aufgabe_x0020_Nummer</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="03d34cd0-2b96-4431-bee0-899674a50992">
               <AttributeID>Aufgabenstelle Nummer</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="45f4e6d4-40ad-4c45-879a-008ddfde71f4">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="75b0e97d-2ed2-496c-afc9-557540a27c5f">
                     <TableID>dbo_DimAufgabenstelle</TableID>
                     <ColumnID>Aufgabenstelle_x0020_Nummer</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="be0a3a34-c86d-4a6f-8e69-1fab87655db5">
               <AttributeID>Aufgabenbereich Nummer</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="36c9ca57-3590-4701-9ae6-98293730befb">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7d23bb15-d659-4e1e-9e37-fccf89d2f11a">
                     <TableID>dbo_DimAufgabenbereich</TableID>
                     <ColumnID>Aufgabenbereich_x0020_Nummer</ColumnID>
                   </Source>
@@ -806,15 +806,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a7df321b-b0e0-45c8-ab04-c23b74f5b210">
           <CubeDimensionID>Dim Konto</CubeDimensionID>
           <Attributes>
-            <Attribute>
+            <Attribute dwd:design-time-name="ee9fd04c-14ca-4599-992e-f4c31c707874">
               <AttributeID>Konto Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="065a9d7e-a1de-4b3f-90a8-84656605f5a5">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2b5ee5b1-ffc9-4bd0-8ec1-587d4b090074">
                     <TableID>dbo_FactSaldo</TableID>
                     <ColumnID>KontoKey</ColumnID>
                   </Source>
@@ -822,113 +822,113 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="8cccf840-822e-41c8-84a9-54f26ca93845">
               <AttributeID>Kontenbereich Name</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="2e15d52c-5717-498f-b351-3e081d1f57cb">
                   <DataType>WChar</DataType>
                   <DataSize>512</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1d38e0e3-dc8e-4aa8-95be-228caf416d24">
                     <TableID>dbo_DimKonto</TableID>
                     <ColumnID>Kontenbereich_x0020_Name</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="cadda319-f579-4347-84c8-b8d3182c141c">
               <AttributeID>Kontenbereich Nummer</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="6d8daad9-7782-4ded-b87a-95e3b5bdd995">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2fb02051-c634-4d2a-a291-64583d4da250">
                     <TableID>dbo_DimKonto</TableID>
                     <ColumnID>Kontenbereich_x0020_Nummer</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="6783adae-52b9-439e-8942-c8efee344061">
               <AttributeID>Kontengruppe Name</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="1c25b46b-04d9-440d-b0e1-059c245980ee">
                   <DataType>WChar</DataType>
                   <DataSize>512</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="067facfc-1a85-4405-b42e-ff2432ddecc4">
                     <TableID>dbo_DimKonto</TableID>
                     <ColumnID>Kontengruppe_x0020_Name</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="0daed384-4120-4fe4-a28d-a276fb24d17d">
               <AttributeID>Kontengruppe Nummer</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="c50a9dd9-fc7a-4912-97cf-6403bf8dbdfd">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b20f341a-2087-46f8-be7c-aab76a9dcfd9">
                     <TableID>dbo_DimKonto</TableID>
                     <ColumnID>Kontengruppe_x0020_Nummer</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="3703aa7f-6722-47e6-b489-4a095916af64">
               <AttributeID>Kontenklasse Name</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="ada054d5-d065-4058-b98b-227c1abd205a">
                   <DataType>WChar</DataType>
                   <DataSize>512</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="110c721b-8c6e-4b26-81a5-2f8e3a004289">
                     <TableID>dbo_DimKonto</TableID>
                     <ColumnID>Kontenklasse_x0020_Name</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="493fe5f6-91a4-476b-8268-d3941eaf709f">
               <AttributeID>Kontenklasse Nummer</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="2d518224-c07f-4ce4-a1c5-eeba9c4bfb64">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="09d30729-c6ba-4b92-84ce-10ea9d93a49c">
                     <TableID>dbo_DimKonto</TableID>
                     <ColumnID>Kontenklasse_x0020_Nummer</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="f77360cc-f8a0-4362-92f3-700f45319d30">
               <AttributeID>Konto Name</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="cea2ea1d-63b4-4843-8e88-1b5c9ad6de3b">
                   <DataType>WChar</DataType>
                   <DataSize>512</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1967a1e7-7c01-4bfa-aceb-f8645155645e">
                     <TableID>dbo_DimKonto</TableID>
                     <ColumnID>Konto_x0020_Name</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="3c9dc49d-4b48-455d-9417-b1e8f91cbe3d">
               <AttributeID>Konto Nummer</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="ac74e36c-12fc-4dd6-ac37-ca06e2f60f14">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e1aa6c39-a44a-4fff-8475-a37e96a5ebe0">
                     <TableID>dbo_DimKonto</TableID>
                     <ColumnID>Konto_x0020_Nummer</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="00f7aada-3a77-4510-9972-ec9f0c1c3ee8">
               <AttributeID>Konto Laufnummer</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="f1d81a8c-91ad-4119-a634-fffca0eb7c5c">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="04140ab6-1194-48b8-b46e-e28b57935e70">
                     <TableID>dbo_DimKonto</TableID>
                     <ColumnID>Konto_x0020_Laufnummer</ColumnID>
                   </Source>
@@ -937,15 +937,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bfcf1592-e095-4c2e-88d1-3275af43fd14">
           <CubeDimensionID>Dim Gemeinde</CubeDimensionID>
           <Attributes>
-            <Attribute>
+            <Attribute dwd:design-time-name="d0d4ebd1-12cb-4ea3-98c5-61acce8a204b">
               <AttributeID>Gemeinde Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="1bf1885b-e673-4532-86ac-93c43bf53530">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="feea08aa-e40a-40ba-a9c9-5bd026f75f60">
                     <TableID>dbo_FactSaldo</TableID>
                     <ColumnID>GemeindeKey</ColumnID>
                   </Source>
@@ -953,129 +953,129 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="15111857-ee13-46d0-a4e6-bb582d7b2f84">
               <AttributeID>Bezirk Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="374a1f64-a9a3-4b68-9ab5-289d7705dd63">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c5199453-f07f-455b-8e5b-1b06dd80147d">
                     <TableID>dbo_DimBezirk</TableID>
                     <ColumnID>BezirkKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="ba9bb8d5-e101-417e-97a2-b3eca562e756">
               <AttributeID>BFS Typ Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="12dade60-0862-4539-8a42-412d1d55913a">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="16519e5b-a4d3-465d-ab42-d466f4851b68">
                     <TableID>dbo_DimBFSTyp</TableID>
                     <ColumnID>BFSTypKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="28c8ef9e-2b14-4f0d-bea9-b6f5926ba66f">
               <AttributeID>BFS Haupttyp Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="d1883ef5-7853-4a73-a1d4-a4ad3743734f">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2f32ebc0-d9a2-4fae-9aa9-c0765448e08b">
                     <TableID>dbo_DimBFSHaupttyp</TableID>
                     <ColumnID>BFSHaupttypKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="34cff26b-e8e5-4341-a2fa-4e3c739e6bba">
               <AttributeID>Agglomerationstyp Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="473c6dfe-4ee1-45ae-86c4-771431976ee9">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0e7218d6-f31d-4812-81fe-0e00f626aa61">
                     <TableID>dbo_DimAgglomerationstyp</TableID>
                     <ColumnID>AgglomerationstypKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="19f9ba8c-f1e3-47aa-a4e9-b77d13731b38">
               <AttributeID>Agglomeration Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="b5b6d43c-1c43-440d-ac15-f324f3ae9f22">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="28afa04f-dd9a-43fb-99e0-d7053637fc7a">
                     <TableID>dbo_DimAgglomeration</TableID>
                     <ColumnID>AgglomerationKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="8522c361-1648-44b4-af8f-cd31eb44aaa6">
               <AttributeID>Gemeindegroesse Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="08c3c490-1fec-4bf4-85ca-6b49cb0c7adb">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1574a4a1-0582-424b-b2bc-e98381f623ed">
                     <TableID>dbo_DimGemeindegroesse</TableID>
                     <ColumnID>GemeindegroesseKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="5bc246e3-a47d-45c3-b69a-c1ac1666573f">
               <AttributeID>Verwaltungskreis Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="1a387230-3131-45dd-858c-0f33b6147dc1">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3a6e10aa-e569-4369-9edc-5d3b0f31e8e9">
                     <TableID>dbo_DimVerwaltungskreis</TableID>
                     <ColumnID>VerwaltungskreisKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="5c25c5b2-af9f-4b64-986a-ab2d4565a453">
               <AttributeID>BFS- Nr</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="20b4fc9a-90c2-4845-ab65-71273a44bc42">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="47768ef5-c99e-412b-b259-a81f408e43fa">
                     <TableID>dbo_DimGemeinde</TableID>
                     <ColumnID>BFS-Nr_x0020_</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="d49c0baf-3a74-4c01-99c6-488c72564f0a">
               <AttributeID>Kanton</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="65e79422-4920-4452-93a6-53da76b22d7f">
                   <DataType>WChar</DataType>
                   <DataSize>4</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="658b235c-8db5-4368-a2fd-5c961b8079f1">
                     <TableID>dbo_DimGemeinde</TableID>
                     <ColumnID>Kanton</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="230cedf9-8ba4-4ac1-9830-62c9a662ec97">
               <AttributeID>Land</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="a005a52f-13f5-4a5e-be94-5dc4e2ae29ae">
                   <DataType>WChar</DataType>
                   <DataSize>7</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7dd41aa8-8098-4ad1-8e54-64ccb67bc7cf">
                     <TableID>dbo_DimGemeinde</TableID>
                     <ColumnID>Land</ColumnID>
                   </Source>
@@ -1084,15 +1084,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="782aa00b-45e0-4877-b901-c2cfa93f04e2">
           <CubeDimensionID>Dim Time</CubeDimensionID>
           <Attributes>
-            <Attribute>
+            <Attribute dwd:design-time-name="046c3a8c-a031-4746-a33a-61468d850b5a">
               <AttributeID>Time Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="8a8fcd1e-4943-4a02-b130-30b68ec3cbcf">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6965d523-79b7-4099-a65c-514d5e0bac89">
                     <TableID>dbo_FactSaldo</TableID>
                     <ColumnID>TimeKey</ColumnID>
                   </Source>
@@ -1100,24 +1100,24 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="bf9ef8e1-2aed-43bf-8de6-391d28e5ee6c">
               <AttributeID>Date</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="0c1a4589-e5b7-449a-96f0-406da48d64fd">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fb02fec5-1832-4b5a-85c8-3d3439fdbf4b">
                     <TableID>dbo_DimTime</TableID>
                     <ColumnID>Date</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="f55d472e-d53f-40af-90b1-ea05319e451d">
               <AttributeID>Year</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="d6d5a160-43ef-40c0-bb2b-836cc452ae1f">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5d5b1217-a822-47f4-a975-21f318da5a49">
                     <TableID>dbo_DimTime</TableID>
                     <ColumnID>Year</ColumnID>
                   </Source>
@@ -1127,40 +1127,16 @@
           </Attributes>
         </Dimension>
       </Dimensions>
-      <Partitions>
-        <Partition>
-          <ID>Fact Saldo</ID>
-          <Name>Fact Saldo</Name>
-          <CreatedTimestamp>2016-05-10T06:08:15.366667Z</CreatedTimestamp>
-          <LastSchemaUpdate>2016-05-10T06:08:15.366667Z</LastSchemaUpdate>
-          <LastProcessed>2016-05-10T06:08:28.023333Z</LastProcessed>
-          <State>Processed</State>
-          <Source xsi:type="DsvTableBinding">
-            <DataSourceViewID>Finsta DW</DataSourceViewID>
-            <TableID>dbo_FactSaldo</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching>
-            <SilenceInterval>-PT1S</SilenceInterval>
-            <Latency>-PT1S</Latency>
-            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <Source xsi:type="ProactiveCachingInheritedBinding" />
-          </ProactiveCaching>
-          <EstimatedSize>19941579</EstimatedSize>
-        </Partition>
-      </Partitions>
-      <ProactiveCaching>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="2edbe94c-afc6-4fd5-950a-cd4adf505622">
         <SilenceInterval>-PT1S</SilenceInterval>
         <Latency>-PT1S</Latency>
         <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
         <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-        <Source xsi:type="ProactiveCachingInheritedBinding" />
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="213a6276-3a55-4181-b1c3-ce6e19934cd5" />
       </ProactiveCaching>
     </MeasureGroup>
-    <MeasureGroup>
+    <MeasureGroup dwd:design-time-name="0c1ccad6-7da6-4614-9ab0-c2777ea242f1">
       <ID>Fact Steuern</ID>
       <Name>Fact Steuern</Name>
       <CreatedTimestamp>2016-05-10T06:08:15.383333Z</CreatedTimestamp>
@@ -1168,51 +1144,51 @@
       <LastProcessed>2016-05-10T06:08:17.383333Z</LastProcessed>
       <State>Processed</State>
       <Measures>
-        <Measure>
+        <Measure dwd:design-time-name="49e4d898-2aaa-446e-8941-bca2be4f5fb5">
           <ID>Einwohner</ID>
           <Name>Einwohner</Name>
           <DataType>Integer</DataType>
-          <Source>
+          <Source dwd:design-time-name="2a9dc919-875c-4e30-acb0-39936368c3e9">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="013e4629-0513-4747-a8c8-5fc7272af7ad">
               <TableID>dbo_FactSteuern</TableID>
               <ColumnID>Einwohner</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="b0350afe-6848-4e87-8a91-bb8e9d13f5fb">
           <ID>Steueranlage</ID>
           <Name>Steueranlage</Name>
           <DataType>Single</DataType>
-          <Source>
+          <Source dwd:design-time-name="d341f040-3a45-4799-819a-4e68b494f7bc">
             <DataType>Single</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="023c9f71-2162-4254-8ec2-7dafc3a77118">
               <TableID>dbo_FactSteuern</TableID>
               <ColumnID>Steueranlage</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="6c5abb4b-23a0-4a8b-9c68-f97d98a539cb">
           <ID>Steueranlagezehntel</ID>
           <Name>Steueranlagezehntel</Name>
           <DataType>Integer</DataType>
-          <Source>
+          <Source dwd:design-time-name="a1b43746-8996-4b8d-bbc6-b9508f63e882">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c51aa74b-4d53-4ce8-bb1d-dfb70123dff9">
               <TableID>dbo_FactSteuern</TableID>
               <ColumnID>Steueranlagezehntel</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="a9d4d7db-7063-4895-8d8a-cead6cead89f">
           <ID>Fact Steuern Count</ID>
           <Name>Fact Steuern Count</Name>
           <AggregateFunction>Count</AggregateFunction>
           <DataType>Integer</DataType>
-          <Source>
+          <Source dwd:design-time-name="da04a9e5-701f-4efc-8f08-d51d0da6d77b">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding">
+            <Source xsi:type="RowBinding" dwd:design-time-name="0f44d393-f308-43d2-a679-9dd1f8d02f7e">
               <TableID>dbo_FactSteuern</TableID>
             </Source>
           </Source>
@@ -1222,16 +1198,16 @@
       <EstimatedSize>32385</EstimatedSize>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8f80bdbb-c889-4223-b251-cdb7f3a6ae8a">
           <CubeDimensionID>Dim Gemeinde</CubeDimensionID>
           <Attributes>
-            <Attribute>
+            <Attribute dwd:design-time-name="e494ea6a-c737-4073-8182-89afb0c96925">
               <AttributeID>Gemeinde Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="9043949a-d42a-43c2-b2de-76c9217532d1">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="762171ca-8fc6-4146-97ee-b51509fa613a">
                     <TableID>dbo_FactSteuern</TableID>
                     <ColumnID>GemeindeKey</ColumnID>
                   </Source>
@@ -1239,129 +1215,129 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="f86e3e7d-6d4c-41ed-b1e9-ec550eeb1c6d">
               <AttributeID>Bezirk Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="add35658-daaa-49d8-b6b0-67d38ee9e2b9">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="208df044-7e7f-44e3-96ae-c96d9afeb8a0">
                     <TableID>dbo_DimBezirk</TableID>
                     <ColumnID>BezirkKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="fb80cef7-1ac2-45e8-b5d6-e1ea395e29cf">
               <AttributeID>BFS Typ Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="de2f8ee7-d00d-499f-9741-d2847c4abb14">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f8c0890e-2414-4112-a118-5df7a8de7ac0">
                     <TableID>dbo_DimBFSTyp</TableID>
                     <ColumnID>BFSTypKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="22b60ab4-31c8-4058-9278-0a90630bcd8f">
               <AttributeID>BFS Haupttyp Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="c2cde660-6be3-48e9-b031-81ad17175ee1">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="75fdb8d4-9199-40e2-8cef-f39979fda9cd">
                     <TableID>dbo_DimBFSHaupttyp</TableID>
                     <ColumnID>BFSHaupttypKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="8e43112d-a21e-492f-bde3-f8d17988d67a">
               <AttributeID>Agglomerationstyp Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="103e6c2b-f16f-4642-ba10-ee445bf6f215">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="94eb8e74-8c9b-4401-a83b-ff54adb0981a">
                     <TableID>dbo_DimAgglomerationstyp</TableID>
                     <ColumnID>AgglomerationstypKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="bdef0c19-f169-40dc-bfa0-bc1d99ac65ce">
               <AttributeID>Agglomeration Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="5c9494a3-6d5f-4671-8c30-13db1bbdee4c">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fca8694d-993c-445a-9b20-fa9b2e8de395">
                     <TableID>dbo_DimAgglomeration</TableID>
                     <ColumnID>AgglomerationKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="1558d92c-04ad-489c-9ec5-3c2255638b94">
               <AttributeID>Gemeindegroesse Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="1d4262a2-5cd1-41a3-9553-b497a49ab7f1">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3ca92036-7561-4c47-b4c0-744d38345dc6">
                     <TableID>dbo_DimGemeindegroesse</TableID>
                     <ColumnID>GemeindegroesseKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="de74c144-b885-42bb-b524-6a6ceeefa94b">
               <AttributeID>Verwaltungskreis Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="e55caa98-3e63-497e-b76f-0ff0c0bc14ff">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9ae8a672-130e-47ff-be8b-ab665e2882de">
                     <TableID>dbo_DimVerwaltungskreis</TableID>
                     <ColumnID>VerwaltungskreisKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="53420872-b98b-4807-8597-18205f27547a">
               <AttributeID>BFS- Nr</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="6080092f-0092-481b-af37-46c0b0474421">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0d52b0aa-fab6-408b-8507-4a26879b66a3">
                     <TableID>dbo_DimGemeinde</TableID>
                     <ColumnID>BFS-Nr_x0020_</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="21a744f1-5319-4f2d-bb76-4f74957e8858">
               <AttributeID>Kanton</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="5d5e4527-41a5-428e-9a05-e19e88fc25d3">
                   <DataType>WChar</DataType>
                   <DataSize>4</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4b74ada7-4b22-4501-aa24-0ca1be7049fd">
                     <TableID>dbo_DimGemeinde</TableID>
                     <ColumnID>Kanton</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="ea705362-4b9f-4b76-9841-bc682c83bafd">
               <AttributeID>Land</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="f341f97c-e6ff-4d33-91ab-9f35383ea7f5">
                   <DataType>WChar</DataType>
                   <DataSize>7</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f47ccfc3-d6bb-4a8c-8a20-93abe4bc3775">
                     <TableID>dbo_DimGemeinde</TableID>
                     <ColumnID>Land</ColumnID>
                   </Source>
@@ -1370,16 +1346,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="11058cd5-c94d-4d0f-96e6-4e33a3ee58a1">
           <CubeDimensionID>Dim Time</CubeDimensionID>
           <Attributes>
-            <Attribute>
+            <Attribute dwd:design-time-name="e1cbd11b-a78a-448a-b819-cec8a2d55f9e">
               <AttributeID>Time Key</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="5247890d-e3e9-4384-b5c5-d7a30bdd5436">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e99c3230-eb4c-4244-abbd-8e5cdfb6c99d">
                     <TableID>dbo_FactSteuern</TableID>
                     <ColumnID>TimeKey</ColumnID>
                   </Source>
@@ -1387,24 +1363,24 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="88c9fb1e-0799-4561-b976-2052b5b7f0dc">
               <AttributeID>Date</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="df1785ac-70e8-414c-8ad5-d8ffa5f43dd2">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="39acd5a3-6ed8-4300-9c11-b440c3376716">
                     <TableID>dbo_DimTime</TableID>
                     <ColumnID>Date</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="596112b8-30f4-4ad4-ac79-9063439cf956">
               <AttributeID>Year</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="42db039c-62c1-4fad-bf7f-da18f51c45b1">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1f2c7401-3615-4853-8ddc-9f8d0e42d407">
                     <TableID>dbo_DimTime</TableID>
                     <ColumnID>Year</ColumnID>
                   </Source>
@@ -1414,45 +1390,21 @@
           </Attributes>
         </Dimension>
       </Dimensions>
-      <Partitions>
-        <Partition>
-          <ID>Fact Steuern</ID>
-          <Name>Fact Steuern</Name>
-          <CreatedTimestamp>2016-05-10T06:08:15.383333Z</CreatedTimestamp>
-          <LastSchemaUpdate>2016-05-10T06:08:15.383333Z</LastSchemaUpdate>
-          <LastProcessed>2016-05-10T06:08:17.366667Z</LastProcessed>
-          <State>Processed</State>
-          <Source xsi:type="DsvTableBinding">
-            <DataSourceViewID>Finsta DW</DataSourceViewID>
-            <TableID>dbo_FactSteuern</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching>
-            <SilenceInterval>-PT1S</SilenceInterval>
-            <Latency>-PT1S</Latency>
-            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <Source xsi:type="ProactiveCachingInheritedBinding" />
-          </ProactiveCaching>
-          <EstimatedSize>32385</EstimatedSize>
-        </Partition>
-      </Partitions>
-      <ProactiveCaching>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="c320d427-5ece-4399-918f-2b5103a0b0ee">
         <SilenceInterval>-PT1S</SilenceInterval>
         <Latency>-PT1S</Latency>
         <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
         <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-        <Source xsi:type="ProactiveCachingInheritedBinding" />
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4924cc3a-c19b-4e27-a080-b6dc6ffc1f8b" />
       </ProactiveCaching>
     </MeasureGroup>
   </MeasureGroups>
-  <Source>
+  <Source dwd:design-time-name="5e191c2c-c965-4fc2-98c2-8d2c6efea08e">
     <DataSourceViewID>Finsta DW</DataSourceViewID>
   </Source>
   <MdxScripts>
-    <MdxScript>
+    <MdxScript dwd:design-time-name="faa95050-4b55-4174-9a51-ad5815a1b9f2">
       <ID>MdxScript</ID>
       <Name>MdxScript</Name>
       <CreatedTimestamp>2016-05-10T06:08:15.4Z</CreatedTimestamp>
@@ -1749,11 +1701,11 @@ VISIBLE = 1; </Text>
       </Commands>
     </MdxScript>
   </MdxScripts>
-  <ProactiveCaching>
+  <ProactiveCaching dwd:design-time-name="73d5c8c5-25b7-4287-962e-2fced4885545">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="8d1c6659-9371-4525-add0-849d02042c91" />
   </ProactiveCaching>
 </Cube>

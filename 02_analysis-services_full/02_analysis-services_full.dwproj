@@ -57,7 +57,22 @@
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Finsta DW</Id>
+            <Name>Finsta DW</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=FinstaDW</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Finsta DW</Id>
+            <Name>Finsta DW</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
