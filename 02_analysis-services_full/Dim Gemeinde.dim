@@ -1,0 +1,548 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Gemeinde</ID>
+  <Name>Dim Gemeinde</Name>
+  <CreatedTimestamp>2016-04-22T08:06:25.826667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2016-05-10T06:08:15.306667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>1811</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>16</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="140">
+            <Shape Id="Gemeinde Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Gemeinde Key" />
+                <Attribute Id="BFS- Nr" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Verwaltungskreis Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Verwaltungskreis Key" />
+              </Attributes>
+              <Position x="200" y="20" />
+            </Shape>
+            <Shape Id="Gemeindegroesse Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Gemeindegroesse Key" />
+              </Attributes>
+              <Position x="200" y="68" />
+            </Shape>
+            <Shape Id="Agglomeration Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Agglomeration Key" />
+              </Attributes>
+              <Position x="200" y="116" />
+            </Shape>
+            <Shape Id="Agglomerationstyp Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Agglomerationstyp Key" />
+              </Attributes>
+              <Position x="200" y="164" />
+            </Shape>
+            <Shape Id="BFS Typ Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="BFS Typ Key" />
+              </Attributes>
+              <Position x="200" y="212" />
+            </Shape>
+            <Shape Id="BFS Haupttyp Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="BFS Haupttyp Key" />
+              </Attributes>
+              <Position x="380" y="212" />
+            </Shape>
+            <Shape Id="Bezirk Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Bezirk Key" />
+              </Attributes>
+              <Position x="200" y="260" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2016-05-10T06:08:16.726667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>Finsta DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration>
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute>
+      <ID>Gemeinde Key</ID>
+      <Name>Gemeinde</Name>
+      <Type>City</Type>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_DimGemeinde</TableID>
+            <ColumnID>GemeindeKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_DimGemeinde</TableID>
+          <ColumnID>Gemeinde</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>Bezirk Key</AttributeID>
+          <Name>Bezirk</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>BFS Typ Key</AttributeID>
+          <Name>BFS Typ</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Agglomerationstyp Key</AttributeID>
+          <Name>Agglomerationstyp</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Agglomeration Key</AttributeID>
+          <Name>Agglomeration</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Gemeindegroesse Key</AttributeID>
+          <Name>Gemeindegroesse</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Verwaltungskreis Key</AttributeID>
+          <Name>Verwaltungskreis</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>BFS- Nr</AttributeID>
+          <Name>BFS- Nr</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Kanton</AttributeID>
+          <Name>Kanton</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Land</AttributeID>
+          <Name>Land</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Bezirk Key</ID>
+      <Name>Bezirk</Name>
+      <Type>County</Type>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_DimBezirk</TableID>
+            <ColumnID>BezirkKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_DimBezirk</TableID>
+          <ColumnID>Bezirk_x0020_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>BFS Typ Key</ID>
+      <Name>BFS Typ</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_DimBFSTyp</TableID>
+            <ColumnID>BFSTypKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_DimBFSTyp</TableID>
+          <ColumnID>BFS_x0020_Typ_x0020_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>BFS Haupttyp Key</AttributeID>
+          <Name>BFS Haupttyp</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>BFS Haupttyp Key</ID>
+      <Name>BFS Haupttyp</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_DimBFSHaupttyp</TableID>
+            <ColumnID>BFSHaupttypKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_DimBFSHaupttyp</TableID>
+          <ColumnID>BFS_x0020_Haupttyp_x0020_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Agglomerationstyp Key</ID>
+      <Name>Agglomerationstyp</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_DimAgglomerationstyp</TableID>
+            <ColumnID>AgglomerationstypKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_DimAgglomerationstyp</TableID>
+          <ColumnID>Agglomerationstyp_x0020_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Agglomeration Key</ID>
+      <Name>Agglomeration</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_DimAgglomeration</TableID>
+            <ColumnID>AgglomerationKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_DimAgglomeration</TableID>
+          <ColumnID>Agglomeration_x0020_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Gemeindegroesse Key</ID>
+      <Name>Gemeindegroesse</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_DimGemeindegroesse</TableID>
+            <ColumnID>GemeindegroesseKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_DimGemeindegroesse</TableID>
+          <ColumnID>Grösse_x0020_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Verwaltungskreis Key</ID>
+      <Name>Verwaltungskreis</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_DimVerwaltungskreis</TableID>
+            <ColumnID>VerwaltungskreisKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_DimVerwaltungskreis</TableID>
+          <ColumnID>VerwaltungskreisName</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>BFS- Nr</ID>
+      <Name>BFS- Nr</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_DimGemeinde</TableID>
+            <ColumnID>BFS-Nr_x0020_</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_DimGemeinde</TableID>
+          <ColumnID>BFS-Nr_x0020_</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Kanton</ID>
+      <Name>Kanton</Name>
+      <Type>StateOrProvince</Type>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_DimGemeinde</TableID>
+            <ColumnID>Kanton</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>4</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_DimGemeinde</TableID>
+          <ColumnID>Kanton</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Land</ID>
+      <Name>Land</Name>
+      <Type>Country</Type>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>7</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_DimGemeinde</TableID>
+            <ColumnID>Land</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>7</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_DimGemeinde</TableID>
+          <ColumnID>Land</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy>
+      <ID>Hierarchy</ID>
+      <Name>Agglomeration - Gemeinde</Name>
+      <Levels>
+        <Level>
+          <ID>Agglomeration</ID>
+          <Name>Agglomeration</Name>
+          <SourceAttributeID>Agglomeration Key</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Gemeinde</ID>
+          <Name>Gemeinde</Name>
+          <SourceAttributeID>Gemeinde Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy 1</ID>
+      <Name>Agglomerationstyp - Gemeinde</Name>
+      <Levels>
+        <Level>
+          <ID>Agglomerationstyp</ID>
+          <Name>Agglomerationstyp</Name>
+          <SourceAttributeID>Agglomerationstyp Key</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Gemeinde</ID>
+          <Name>Gemeinde</Name>
+          <SourceAttributeID>Gemeinde Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy 2</ID>
+      <Name>BFS Haupttyp - BFS Typ</Name>
+      <Levels>
+        <Level>
+          <ID>BFS Haupttyp</ID>
+          <Name>BFS Haupttyp</Name>
+          <SourceAttributeID>BFS Haupttyp Key</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>BFS Typ</ID>
+          <Name>BFS Typ</Name>
+          <SourceAttributeID>BFS Typ Key</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Gemeinde</ID>
+          <Name>Gemeinde</Name>
+          <SourceAttributeID>Gemeinde Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy 3</ID>
+      <Name>Bezirk - Gemeinde</Name>
+      <Levels>
+        <Level>
+          <ID>Bezirk</ID>
+          <Name>Bezirk</Name>
+          <SourceAttributeID>Bezirk Key</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Gemeinde</ID>
+          <Name>Gemeinde</Name>
+          <SourceAttributeID>Gemeinde Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy 4</ID>
+      <Name>Gemeindegroesse - Gemeinde</Name>
+      <Levels>
+        <Level>
+          <ID>Gemeindegroesse</ID>
+          <Name>Gemeindegroesse</Name>
+          <SourceAttributeID>Gemeindegroesse Key</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Gemeinde</ID>
+          <Name>Gemeinde</Name>
+          <SourceAttributeID>Gemeinde Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy 5</ID>
+      <Name>Verwaltungskreis - Gemeinde</Name>
+      <Levels>
+        <Level>
+          <ID>Verwaltungskreis</ID>
+          <Name>Verwaltungskreis</Name>
+          <SourceAttributeID>Verwaltungskreis Key</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Gemeinde</ID>
+          <Name>Gemeinde</Name>
+          <SourceAttributeID>Gemeinde Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
