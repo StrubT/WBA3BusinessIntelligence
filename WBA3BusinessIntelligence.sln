@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "01_integration-services", "01_integration-services\01_integration-services.dtproj", "{071A86ED-0842-4DFA-BDED-269023BE66A8}"
 EndProject
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "01_integration-services_solution", "01_integration-services_solution\01_integration-services_solution.dtproj", "{6DF7A498-3CDE-40FD-B5EC-AF709A56C5F3}"
@@ -12,6 +14,8 @@ EndProject
 Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "02_analysis-services_full", "02_analysis-services_full\02_analysis-services_full.dwproj", "{1A662D1D-867D-4041-B44E-63A6E402EE6D}"
 EndProject
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "03_reporting-services", "03_reporting-services\03_reporting-services.rptproj", "{26BC8F6B-5528-4DBE-9084-0E27A8712271}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "03_reporting-services_solution", "03_reporting-services_solution\03_reporting-services_solution.rptproj", "{1386144E-9CEF-4B46-B576-40D979E3BA9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +87,18 @@ Global
 		{26BC8F6B-5528-4DBE-9084-0E27A8712271}.Release|Default.ActiveCfg = Release
 		{26BC8F6B-5528-4DBE-9084-0E27A8712271}.Release|Default.Build.0 = Release
 		{26BC8F6B-5528-4DBE-9084-0E27A8712271}.Release|Default.Deploy.0 = Release
+		{1386144E-9CEF-4B46-B576-40D979E3BA9F}.Debug|Default.ActiveCfg = Debug
+		{1386144E-9CEF-4B46-B576-40D979E3BA9F}.Debug|Default.Build.0 = Debug
+		{1386144E-9CEF-4B46-B576-40D979E3BA9F}.Debug|Default.Deploy.0 = Debug
+		{1386144E-9CEF-4B46-B576-40D979E3BA9F}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{1386144E-9CEF-4B46-B576-40D979E3BA9F}.DebugLocal|Default.Build.0 = DebugLocal
+		{1386144E-9CEF-4B46-B576-40D979E3BA9F}.DebugLocal|Default.Deploy.0 = DebugLocal
+		{1386144E-9CEF-4B46-B576-40D979E3BA9F}.Development|Default.ActiveCfg = DebugLocal
+		{1386144E-9CEF-4B46-B576-40D979E3BA9F}.Development|Default.Build.0 = DebugLocal
+		{1386144E-9CEF-4B46-B576-40D979E3BA9F}.Development|Default.Deploy.0 = DebugLocal
+		{1386144E-9CEF-4B46-B576-40D979E3BA9F}.Release|Default.ActiveCfg = Release
+		{1386144E-9CEF-4B46-B576-40D979E3BA9F}.Release|Default.Build.0 = Release
+		{1386144E-9CEF-4B46-B576-40D979E3BA9F}.Release|Default.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

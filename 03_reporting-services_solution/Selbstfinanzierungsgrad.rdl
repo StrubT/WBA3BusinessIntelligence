@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DW_Finsta">
+      <DataSourceReference>DW FINSTA</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>37bec06f-6ce8-4d95-bb28-3a989952fcee</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="AS_Finsta">
+      <DataSourceReference>AS FINSTA</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>687f042f-1e80-40b0-9060-1d3471127e36</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="Gemeindegrenzen">
+      <Query>
+        <DataSourceName>DW_Finsta</DataSourceName>
+        <CommandText>SELECT        ID, KT, V_KREISNR, CAST(GMDE AS NVARCHAR(50)) AS GMDE, NAME, SEE, SHAPE_AREA, SHAPE_LEN, geom
+FROM            geo.Gemeindegrenzen</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="KT">
+          <DataField>KT</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="V_KREISNR">
+          <DataField>V_KREISNR</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="GMDE">
+          <DataField>GMDE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NAME">
+          <DataField>NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SEE">
+          <DataField>SEE</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="SHAPE_AREA">
+          <DataField>SHAPE_AREA</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
+        <Field Name="geom">
+          <DataField>geom</DataField>
+          <rd:TypeName>Microsoft.SqlServer.Types.SqlGeometry</rd:TypeName>
+        </Field>
+        <Field Name="SHAPE_LEN">
+          <DataField>SHAPE_LEN</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="Selbstfinanzierungsgrad">
+      <Query>
+        <DataSourceName>AS_Finsta</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="TimeYear">
+            <Value>=Parameters!TimeYear.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>WITH MEMBER [Measures].[BfsNrParameterValue] AS [Gemeinde].[BFS- Nr].CURRENTMEMBER.UNIQUENAME SELECT NON EMPTY { [Measures].[BfsNrParameterValue], [Measures].[Selbstfinanzierungsgrad] } ON COLUMNS, NON EMPTY { ([Gemeinde].[Gemeinde].[Gemeinde].ALLMEMBERS * [Gemeinde].[BFS- Nr].[BFS- Nr].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@TimeYear, CONSTRAINED) ) ON COLUMNS FROM [Finsta Solution]) WHERE ( IIF( STRTOSET(@TimeYear, CONSTRAINED).Count = 1, STRTOSET(@TimeYear, CONSTRAINED), [Time].[Year].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <rd:DesignerState><QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"><CommandType>MDX</CommandType><QuerySpecification xsi:type="MDXQuerySpecification"><Select><Items><Item><ID xsi:type="Level"><DimensionName>Gemeinde</DimensionName><HierarchyName>Gemeinde</HierarchyName><HierarchyUniqueName>[Gemeinde].[Gemeinde]</HierarchyUniqueName><LevelName>Gemeinde</LevelName><UniqueName>[Gemeinde].[Gemeinde].[Gemeinde]</UniqueName></ID><ItemCaption>Gemeinde</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Gemeinde</DimensionName><HierarchyName>BFS- Nr</HierarchyName><HierarchyUniqueName>[Gemeinde].[BFS- Nr]</HierarchyUniqueName><LevelName>BFS- Nr</LevelName><UniqueName>[Gemeinde].[BFS- Nr].[BFS- Nr]</UniqueName></ID><ItemCaption>BFS- Nr</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Measure"><MeasureName>BfsNrParameterValue</MeasureName><UniqueName>[Measures].[BfsNrParameterValue]</UniqueName></ID><ItemCaption>BfsNrParameterValue</ItemCaption><BackColor>true</BackColor><ForeColor>true</ForeColor><FontFamily>true</FontFamily><FontSize>true</FontSize><FontWeight>true</FontWeight><FontStyle>true</FontStyle><FontDecoration>true</FontDecoration><FormattedValue>true</FormattedValue><FormatString>true</FormatString></Item><Item><ID xsi:type="Measure"><MeasureName>Selbstfinanzierungsgrad</MeasureName><UniqueName>[Measures].[Selbstfinanzierungsgrad]</UniqueName></ID><ItemCaption>Selbstfinanzierungsgrad</ItemCaption><BackColor>true</BackColor><ForeColor>true</ForeColor><FontFamily>true</FontFamily><FontSize>true</FontSize><FontWeight>true</FontWeight><FontStyle>true</FontStyle><FontDecoration>true</FontDecoration><FormattedValue>true</FormattedValue><FormatString>true</FormatString></Item></Items></Select><From>Finsta Solution</From><Filter><FilterItems><FilterItem><HierarchyUniqueName>[Time].[Year]</HierarchyUniqueName><Condition xsi:type="EqualTo"><Members><Member><MemberUniqueName>[Time].[Year].&amp;[2009-12-31T00:00:00]</MemberUniqueName></Member></Members><Parametrized>true</Parametrized></Condition></FilterItem></FilterItems></Filter><Calculations><Calculation><ID>[BfsNrParameterValue]</ID><Name>BfsNrParameterValue</Name><ParentUniqueName>[Measures]</ParentUniqueName><Expression>[Gemeinde].[BFS- Nr].CURRENTMEMBER.UNIQUENAME</Expression></Calculation></Calculations><Aggregates /><QueryProperties /></QuerySpecification><Query><Statement>WITH MEMBER [Measures].[BfsNrParameterValue] AS [Gemeinde].[BFS- Nr].CURRENTMEMBER.UNIQUENAME SELECT NON EMPTY { [Measures].[BfsNrParameterValue], [Measures].[Selbstfinanzierungsgrad] } ON COLUMNS, NON EMPTY { ([Gemeinde].[Gemeinde].[Gemeinde].ALLMEMBERS * [Gemeinde].[BFS- Nr].[BFS- Nr].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@TimeYear, CONSTRAINED) ) ON COLUMNS FROM [Finsta Solution]) WHERE ( IIF( STRTOSET(@TimeYear, CONSTRAINED).Count = 1, STRTOSET(@TimeYear, CONSTRAINED), [Time].[Year].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement><ParameterDefinitions><ParameterDefinition><Name>TimeYear</Name><DefaultValues><DefaultValue>[Time].[Year].&amp;[2009-12-31T00:00:00]</DefaultValue></DefaultValues><Caption>Year</Caption><HierarchyUniqueName>[Time].[Year]</HierarchyUniqueName><ParameterValuesQuery><Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Time].[Year].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Time].[Year].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Time].[Year].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Time].[Year].ALLMEMBERS ON ROWS FROM [Finsta Solution]</Statement><ParameterizedStatement><ReferencedParameters /></ParameterizedStatement></ParameterValuesQuery><MultipleValues>true</MultipleValues></ParameterDefinition></ParameterDefinitions></Query></QueryDefinition></rd:DesignerState>
+      </Query>
+      <Fields>
+        <Field Name="Gemeinde">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Gemeinde].[Gemeinde].[Gemeinde]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BFS__Nr">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Gemeinde].[BFS- Nr].[BFS- Nr]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Selbstfinanzierungsgrad">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Selbstfinanzierungsgrad]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="BfsNrParameterValue">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[BfsNrParameterValue]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="TimeYear">
+      <Query>
+        <DataSourceName>AS_Finsta</DataSourceName>
+        <CommandText>WITH MEMBER [Measures].[ParameterCaption] AS [Time].[Year].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Time].[Year].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Time].[Year].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Time].[Year].ALLMEMBERS ON ROWS FROM [FINSTA Solution]</CommandText>
+        <rd:DesignerState><QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"><CommandType>MDX</CommandType><Type>Query</Type><QuerySpecification xsi:type="MDXQuerySpecification"><Select><Items><Item><ID xsi:type="Level"><DimensionName>Time</DimensionName><HierarchyName>Year</HierarchyName><HierarchyUniqueName>[Time].[Year]</HierarchyUniqueName><LevelName>Year</LevelName><UniqueName>[Time].[Year].[Year]</UniqueName></ID><ItemCaption>Year</ItemCaption></Item><Item><ID xsi:type="Measure"><MeasureName>ParameterCaption</MeasureName><UniqueName>[Measures].[ParameterCaption]</UniqueName></ID><ItemCaption>ParameterCaption</ItemCaption><FormattedValue>true</FormattedValue></Item><Item><ID xsi:type="Measure"><MeasureName>ParameterValue</MeasureName><UniqueName>[Measures].[ParameterValue]</UniqueName></ID><ItemCaption>ParameterValue</ItemCaption><FormattedValue>true</FormattedValue></Item><Item><ID xsi:type="Measure"><MeasureName>ParameterLevel</MeasureName><UniqueName>[Measures].[ParameterLevel]</UniqueName></ID><ItemCaption>ParameterLevel</ItemCaption><FormattedValue>true</FormattedValue></Item></Items></Select><From>FINSTA Solution</From><Filter><FilterItems /></Filter><Calculations /><Aggregates /><QueryProperties /></QuerySpecification><Query><Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Time].[Year].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Time].[Year].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Time].[Year].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Time].[Year].ALLMEMBERS ON ROWS FROM [FINSTA Solution]</Statement><ParameterDefinitions /></Query></QueryDefinition></rd:DesignerState>
+        <rd:Hidden>true</rd:Hidden>
+      </Query>
+      <Fields>
+        <Field Name="Year">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Time].[Year].[Year]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ParameterCaption">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterCaption]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterValue">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterValue]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterLevel">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterLevel]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterCaptionIndented">
+          <Value>=Space(3*Fields!ParameterLevel.Value) + Fields!ParameterCaption.Value</Value>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Map Name="Map1">
+            <MapViewport>
+              <ProjectionCenterX>NaN</ProjectionCenterX>
+              <ProjectionCenterY>NaN</ProjectionCenterY>
+              <MapLimits>
+                <MinimumX>NaN</MinimumX>
+                <MinimumY>NaN</MinimumY>
+                <MaximumX>NaN</MaximumX>
+                <MaximumY>NaN</MaximumY>
+              </MapLimits>
+              <MaximumZoom>4000000</MaximumZoom>
+              <SimplificationResolution>0.246597947350296</SimplificationResolution>
+              <MapCustomView>
+                <Zoom>124.791351318359</Zoom>
+              </MapCustomView>
+              <MapMeridians>
+                <Style>
+                  <Border>
+                    <Color>#c08080ff</Color>
+                    <Style>None</Style>
+                  </Border>
+                  <FontSize>8pt</FontSize>
+                  <Format>#;#;0</Format>
+                  <Color>#c08080ff</Color>
+                </Style>
+                <Hidden>true</Hidden>
+                <Interval>NaN</Interval>
+                <ShowLabels>true</ShowLabels>
+              </MapMeridians>
+              <MapParallels>
+                <Style>
+                  <Border>
+                    <Color>#c08080ff</Color>
+                    <Style>None</Style>
+                  </Border>
+                  <FontSize>8pt</FontSize>
+                  <Format>#;#;0</Format>
+                  <Color>#c08080ff</Color>
+                </Style>
+                <Hidden>true</Hidden>
+                <Interval>NaN</Interval>
+                <ShowLabels>true</ShowLabels>
+              </MapParallels>
+              <GridUnderContent>false</GridUnderContent>
+              <Style>
+                <Border>
+                  <Color>#00ffffff</Color>
+                  <Style>Solid</Style>
+                </Border>
+                <BackgroundColor>#00ffffff</BackgroundColor>
+                <BackgroundGradientType>None</BackgroundGradientType>
+                <BackgroundGradientEndColor>Gainsboro</BackgroundGradientEndColor>
+                <ShadowOffset>0pt</ShadowOffset>
+              </Style>
+              <LeftMargin>2pt</LeftMargin>
+              <RightMargin>2pt</RightMargin>
+              <TopMargin>2pt</TopMargin>
+              <BottomMargin>2pt</BottomMargin>
+            </MapViewport>
+            <MapDataRegions>
+              <MapDataRegion Name="Map1_PolygonLayer3_DataRegion">
+                <DataSetName>Selbstfinanzierungsgrad</DataSetName>
+                <MapMember>
+                  <Group Name="Map1_PolygonLayer3_Group">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!BFS__Nr.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                </MapMember>
+              </MapDataRegion>
+            </MapDataRegions>
+            <MapLayers>
+              <MapPolygonLayer Name="PolygonLayer3">
+                <MapPolygonTemplate>
+                  <Style>
+                    <Border>
+                      <Color>Gray</Color>
+                      <Style>Solid</Style>
+                    </Border>
+                    <BackgroundColor>White</BackgroundColor>
+                    <BackgroundGradientType>None</BackgroundGradientType>
+                    <BackgroundGradientEndColor>LightGrey</BackgroundGradientEndColor>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                  <ToolTip>=Fields!Gemeinde.Value &amp; " " &amp; FormatPercent(Fields!Selbstfinanzierungsgrad.Value)</ToolTip>
+                </MapPolygonTemplate>
+                <MapPolygonRules>
+                  <MapCustomColorRule>
+                    <MapCustomColors>
+                      <MapCustomColor>Red</MapCustomColor>
+                      <MapCustomColor>#ffc3c3</MapCustomColor>
+                      <MapCustomColor>#c3ffc3</MapCustomColor>
+                      <MapCustomColor>Lime</MapCustomColor>
+                      <MapCustomColor>#016400</MapCustomColor>
+                    </MapCustomColors>
+                    <ShowInColorScale>true</ShowInColorScale>
+                    <DataValue>=Sum(Fields!Selbstfinanzierungsgrad.Value)</DataValue>
+                    <DistributionType>Custom</DistributionType>
+                    <StartValue />
+                    <EndValue />
+                    <MapBuckets>
+                      <MapBucket>
+                        <StartValue />
+                        <EndValue>0</EndValue>
+                      </MapBucket>
+                      <MapBucket>
+                        <StartValue>0</StartValue>
+                        <EndValue>0.599</EndValue>
+                      </MapBucket>
+                      <MapBucket>
+                        <StartValue>0.6</StartValue>
+                        <EndValue>0.799</EndValue>
+                      </MapBucket>
+                      <MapBucket>
+                        <StartValue>0.8</StartValue>
+                        <EndValue>0.999</EndValue>
+                      </MapBucket>
+                      <MapBucket>
+                        <StartValue>1</StartValue>
+                        <EndValue />
+                      </MapBucket>
+                    </MapBuckets>
+                    <LegendName>Legend1</LegendName>
+                    <LegendText>#FROMVALUE{P1} - #TOVALUE{P1}</LegendText>
+                  </MapCustomColorRule>
+                </MapPolygonRules>
+                <MapMarkerTemplate>
+                  <MapMarker>
+                    <MapMarkerStyle>Circle</MapMarkerStyle>
+                  </MapMarker>
+                  <Size>10pt</Size>
+                  <Style>
+                    <Border>
+                      <Color>Gray</Color>
+                      <Style>Solid</Style>
+                    </Border>
+                    <BackgroundColor>White</BackgroundColor>
+                    <BackgroundGradientType>None</BackgroundGradientType>
+                    <BackgroundGradientEndColor>LightGrey</BackgroundGradientEndColor>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                  <Hidden>true</Hidden>
+                </MapMarkerTemplate>
+                <MapCenterPointRules />
+                <MapDataRegionName>Map1_PolygonLayer3_DataRegion</MapDataRegionName>
+                <MapBindingFieldPairs>
+                  <MapBindingFieldPair>
+                    <FieldName>GMDE</FieldName>
+                    <BindingExpression>=Fields!BFS__Nr.Value</BindingExpression>
+                  </MapBindingFieldPair>
+                </MapBindingFieldPairs>
+                <MapSpatialDataSet>
+                  <DataSetName>Gemeindegrenzen</DataSetName>
+                  <SpatialField>geom</SpatialField>
+                  <MapFieldNames>
+                    <MapFieldName>ID</MapFieldName>
+                    <MapFieldName>KT</MapFieldName>
+                    <MapFieldName>V_KREISNR</MapFieldName>
+                    <MapFieldName>GMDE</MapFieldName>
+                    <MapFieldName>NAME</MapFieldName>
+                    <MapFieldName>SEE</MapFieldName>
+                    <MapFieldName>SHAPE_AREA</MapFieldName>
+                    <MapFieldName>SHAPE_LEN</MapFieldName>
+                  </MapFieldNames>
+                </MapSpatialDataSet>
+              </MapPolygonLayer>
+            </MapLayers>
+            <MapLegends>
+              <MapLegend Name="Legend1">
+                <MapLegendTitle>
+                  <Style>
+                    <BackgroundColor>#00ffffff</BackgroundColor>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                  <Caption>Selbstfinanzierungsgrad</Caption>
+                </MapLegendTitle>
+                <AutoFitTextDisabled>false</AutoFitTextDisabled>
+                <InterlacedRows>false</InterlacedRows>
+                <EquallySpacedItems>false</EquallySpacedItems>
+                <Position>RightCenter</Position>
+                <DockOutsideViewport>true</DockOutsideViewport>
+                <Style>
+                  <Border>
+                    <Color>Gray</Color>
+                    <Style>Solid</Style>
+                  </Border>
+                  <BackgroundColor>White</BackgroundColor>
+                  <BackgroundGradientType>DiagonalLeft</BackgroundGradientType>
+                  <BackgroundGradientEndColor>Gainsboro</BackgroundGradientEndColor>
+                  <FontSize>8pt</FontSize>
+                  <ShadowOffset>1pt</ShadowOffset>
+                </Style>
+                <LeftMargin>2pt</LeftMargin>
+                <RightMargin>2pt</RightMargin>
+                <TopMargin>2pt</TopMargin>
+                <BottomMargin>2pt</BottomMargin>
+              </MapLegend>
+            </MapLegends>
+            <MapTitles>
+              <MapTitle Name="Title1">
+                <Text>="Selbstfinanzierungsgrad "+Parameters!TimeYear.Label</Text>
+                <Angle>NaN</Angle>
+                <TextShadowOffset>0pt</TextShadowOffset>
+                <DockOutsideViewport>true</DockOutsideViewport>
+                <Style>
+                  <Border>
+                    <Color>Gray</Color>
+                    <Style>None</Style>
+                  </Border>
+                  <BackgroundColor>#00ffffff</BackgroundColor>
+                  <BackgroundGradientType>None</BackgroundGradientType>
+                  <BackgroundGradientEndColor>Gainsboro</BackgroundGradientEndColor>
+                  <FontWeight>Bold</FontWeight>
+                  <TextAlign>Left</TextAlign>
+                  <ShadowOffset>0pt</ShadowOffset>
+                </Style>
+                <LeftMargin>2pt</LeftMargin>
+                <RightMargin>2pt</RightMargin>
+                <TopMargin>2pt</TopMargin>
+                <BottomMargin>2pt</BottomMargin>
+              </MapTitle>
+            </MapTitles>
+            <MapDistanceScale>
+              <ScaleBorderColor>Gray</ScaleBorderColor>
+              <Position>RightBottom</Position>
+              <DockOutsideViewport>false</DockOutsideViewport>
+              <Style>
+                <Border>
+                  <Color>Gray</Color>
+                  <Style>Solid</Style>
+                </Border>
+                <BackgroundColor>White</BackgroundColor>
+                <BackgroundGradientType>DiagonalLeft</BackgroundGradientType>
+                <BackgroundGradientEndColor>Gainsboro</BackgroundGradientEndColor>
+                <FontSize>8pt</FontSize>
+                <ShadowOffset>1pt</ShadowOffset>
+              </Style>
+              <MapSize>
+                <Width>80</Width>
+                <Height>40</Height>
+                <Unit>Point</Unit>
+              </MapSize>
+              <LeftMargin>2pt</LeftMargin>
+              <RightMargin>2pt</RightMargin>
+              <TopMargin>2pt</TopMargin>
+              <BottomMargin>2pt</BottomMargin>
+            </MapDistanceScale>
+            <MapColorScale>
+              <MapColorScaleTitle>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+                <Caption />
+              </MapColorScaleTitle>
+              <ColorBarBorderColor>Gray</ColorBarBorderColor>
+              <LabelFormat>#,##0.##</LabelFormat>
+              <HideEndLabels>false</HideEndLabels>
+              <NoDataText>No data</NoDataText>
+              <Position>LeftBottom</Position>
+              <DockOutsideViewport>false</DockOutsideViewport>
+              <Hidden>true</Hidden>
+              <Style>
+                <Border>
+                  <Color>Gray</Color>
+                  <Style>Solid</Style>
+                </Border>
+                <BackgroundColor>White</BackgroundColor>
+                <BackgroundGradientType>DiagonalLeft</BackgroundGradientType>
+                <BackgroundGradientEndColor>Gainsboro</BackgroundGradientEndColor>
+                <FontSize>8pt</FontSize>
+                <ShadowOffset>1pt</ShadowOffset>
+              </Style>
+              <LeftMargin>2pt</LeftMargin>
+              <RightMargin>2pt</RightMargin>
+              <TopMargin>2pt</TopMargin>
+              <BottomMargin>2pt</BottomMargin>
+            </MapColorScale>
+            <MapBorderSkin>
+              <Style>
+                <Border />
+                <BackgroundColor>Gray</BackgroundColor>
+                <BackgroundGradientType>None</BackgroundGradientType>
+                <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
+                <Color>White</Color>
+              </Style>
+            </MapBorderSkin>
+            <Height>10.84667cm</Height>
+            <Width>16.63724cm</Width>
+            <Style>
+              <Border>
+                <Color>Gray</Color>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>White</BackgroundColor>
+              <BackgroundGradientType>None</BackgroundGradientType>
+              <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
+            </Style>
+          </Map>
+        </ReportItems>
+        <Height>4.27034in</Height>
+        <Style />
+      </Body>
+      <Width>6.62859in</Width>
+      <Page>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>2cm</LeftMargin>
+        <RightMargin>2cm</RightMargin>
+        <TopMargin>2cm</TopMargin>
+        <BottomMargin>2cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="TimeYear">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>[Time].[Year].&amp;[2009-12-31T00:00:00]</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Jahr</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>TimeYear</DataSetName>
+          <ValueField>ParameterValue</ValueField>
+          <LabelField>ParameterCaptionIndented</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>d2749a62-26b0-47d9-81b4-0411c47436f2</rd:ReportID>
+</Report>

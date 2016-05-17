@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="FinstaDW">
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DW FINSTA">
   <ConnectionProperties>
     <Extension>SQL</Extension>
     <ConnectString>Data Source=asklepios.bfh.ch;Initial Catalog=FinstaDW</ConnectString>
     <IntegratedSecurity>true</IntegratedSecurity>
   </ConnectionProperties>
-  <DataSourceID>3cdeb1da-08e9-40c6-84ff-130cc7df5117</DataSourceID>
+  <DataSourceID>837a85ff-e321-4d17-9590-7d7c54c9ce57</DataSourceID>
 </RptDataSource>

@@ -2,8 +2,7 @@
 <RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="FinstaSolution">
   <ConnectionProperties>
     <Extension>SQL</Extension>
-    <ConnectString>Data Source=asklepios;Initial Catalog=FinstaSolution</ConnectString>
-    <IntegratedSecurity>true</IntegratedSecurity>
+    <ConnectString>Data Source=asklepios.bfh.ch;Initial Catalog=FinstaSolution</ConnectString>
   </ConnectionProperties>
   <DataSourceID>ca186740-377b-4ca2-ac05-40995f99d7e0</DataSourceID>
 </RptDataSource>
