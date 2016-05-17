@@ -225,10 +225,10 @@ FROM            FactSaldo INNER JOIN
                   <MapCustomColorRule>
                     <MapCustomColors>
                       <MapCustomColor>Red</MapCustomColor>
-                      <MapCustomColor>Pink</MapCustomColor>
-                      <MapCustomColor>PaleTurquoise</MapCustomColor>
+                      <MapCustomColor>#fec2c2</MapCustomColor>
+                      <MapCustomColor>#c2fec2</MapCustomColor>
                       <MapCustomColor>Lime</MapCustomColor>
-                      <MapCustomColor>SeaGreen</MapCustomColor>
+                      <MapCustomColor>#016300</MapCustomColor>
                     </MapCustomColors>
                     <ShowInColorScale>true</ShowInColorScale>
                     <DataValue>=Sum(Fields!Selbstfinanzierungsgrad.Value)</DataValue>
@@ -311,7 +311,7 @@ FROM            FactSaldo INNER JOIN
                     <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
-                  <Caption>Title</Caption>
+                  <Caption>Legende</Caption>
                 </MapLegendTitle>
                 <AutoFitTextDisabled>false</AutoFitTextDisabled>
                 <InterlacedRows>false</InterlacedRows>
@@ -337,7 +337,7 @@ FROM            FactSaldo INNER JOIN
             </MapLegends>
             <MapTitles>
               <MapTitle Name="Title1">
-                <Text>Map Title</Text>
+                <Text>Selbstfinanzierungsgrad</Text>
                 <Angle>NaN</Angle>
                 <TextShadowOffset>0pt</TextShadowOffset>
                 <DockOutsideViewport>true</DockOutsideViewport>
@@ -393,7 +393,7 @@ FROM            FactSaldo INNER JOIN
                 <Caption />
               </MapColorScaleTitle>
               <ColorBarBorderColor>Gray</ColorBarBorderColor>
-              <LabelFormat>#,##0.##</LabelFormat>
+              <LabelFormat>0.00%</LabelFormat>
               <HideEndLabels>false</HideEndLabels>
               <NoDataText>No data</NoDataText>
               <Position>LeftBottom</Position>
@@ -423,10 +423,8 @@ FROM            FactSaldo INNER JOIN
                 <Color>White</Color>
               </Style>
             </MapBorderSkin>
-            <Top>2.21932cm</Top>
-            <Left>5.26204cm</Left>
-            <Height>10cm</Height>
-            <Width>15cm</Width>
+            <Height>14.11111cm</Height>
+            <Width>15.875cm</Width>
             <Style>
               <Border>
                 <Color>Gray</Color>
@@ -438,10 +436,10 @@ FROM            FactSaldo INNER JOIN
             </Style>
           </Map>
         </ReportItems>
-        <Height>5.17534in</Height>
+        <Height>400pt</Height>
         <Style />
       </Body>
-      <Width>9.8001in</Width>
+      <Width>450pt</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
